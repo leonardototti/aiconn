@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script data-swup-ignore-script defer src="https://kit.fontawesome.com/5f36581569.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/js/SwupHeadPlugin.js"></script>
+    <script src="/js/SwupPreloadPlugin.js"></script>
+    <script src="/js/SwupProgressPlugin.js"></script>
+    <script src="/js/SwupSlideTheme.js"></script>
+    <script src="/js/SwupScriptsPlugin.js"></script>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
+
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/burger.css">
+
+    <link rel="preload" href="/css/pages/portfolio.css" as="style">
+    <link rel="stylesheet" href="/css/pages/portfolio.css">
+
+    <link rel="preload" href="/css/pages/index.css" as="style">
+    <link rel="preload" href="/css/pages/about.css" as="style">
+    <link rel="preload" href="/css/pages/who.css" as="style">
+
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" as="style"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta http-equiv="refresh" content="15; URL='/'"/>
+
+    <title>Aiconn - Página não encontrada</title>
+</head>
+
+<body style="opacity: 0;">
+    <main id="swup" class="notfound-page page-transition">
+        <div></div>
+        <div class="notfound-page notfound-content">
+            <img width="80%" src="/img/404.png" alt="404">
+            <h1 class="notfound-page notfound-title">Página não encontrada</h1>
+            <hr class="notfound-page divisor">
+            <p>Parece que o link que apontava para aqui não está mais funcionando :(</p>
+            <button onclick="window.location = '/';" class="notfound-page back-button"><i
+                class="notfound-page fas fa-long-arrow-alt-left"></i> Voltar</button>
+        </div>
+        <div>
+            <p class="copyright">&copy; <span id="current_year"></span> Aiconn, Projeto Interdisciplinar, Unifil</p>
+        </div>
+    </main>
+    <script>
+        window.onload = () => {
+            document.body.removeAttribute("style");
+            document.getElementById("current_year").innerHTML = new Date().getFullYear();
+        }
+    </script>
+    <script data-swup-ignore-script>
+        const swup = new Swup({
+            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+                new SwupSlideTheme(), new SwupScriptsPlugin() ],
+            animateHistoryBrowsing: true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</body>
+
+</html>

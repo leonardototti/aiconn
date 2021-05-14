@@ -1,0 +1,278 @@
+a.about-page.colored-link {
+    color: var(--primary-color)!important;
+}
+
+.logo-container.about-page p {
+    color: var(--darkprimary-color); 
+}
+
+.navigation-container.about-page a {
+    color: var(--darkprimary-color);
+    transition: .4s;
+}
+
+@media(max-width: 768px) {
+    .navigation-container.about-page a {
+        color: whitesmoke;
+    }
+    .navigation-container.about-page li a.active-page {
+        color: var(--lighterprimary-color);
+    }
+    li.portfolio-li i.submenu-icon {
+        color: white;
+    }
+}
+
+.navigation-container.about-page a:hover {
+    color: var(--primary-color)!important;
+}
+
+.navigation-container.about-page a.active-page {
+    color: var(--lightprimary-color);
+}
+
+.main-title.about-page {
+    font-family: 'Mont';
+    font-size: 70px;
+    color: var(--darkprimary-color);
+    transition: .4s;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, transparent 51%, var(--darkprimary-color) 49%);
+    width: fit-content;
+}
+
+@media(max-width: 768px) {
+    .main-title.about-page {
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 576px) {
+    .main-title.about-page {
+        font-size: 50px;
+    }
+}
+
+.main-description.about-page {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: var(--darkgray-color);
+    transition: .5s;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, transparent 51%, var(--darkgray-color) 49%);
+    width: fit-content;
+    word-break: break-all;
+}
+
+.about-title.about-page {
+    font-family: 'Montserrat';
+    font-size: 2.5rem;
+}
+
+@media(max-width: 576px) {
+    .about-title.about-page {
+        font-size: 1.8rem;
+    }
+}
+
+.about-page.screens-slider-container {
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    height: 700px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.about-page.screens-slider-container img {
+    position: absolute;
+    top: 50%;
+    transition: .2s;
+}
+
+.about-page.screens-slider-container img.blur {
+    filter: blur(5px);
+}
+
+.about-page.screens-slider-container img:hover {
+    z-index: 10!important;
+    cursor: pointer;
+}
+
+.about-page.screens-slider-container img:hover:nth-child(1) {
+    transform: translateY(-50%) scale(1.1);
+    height: 500px;
+}
+
+.about-page.screens-slider-container img:hover:nth-child(2) {
+    transform: translateY(-50%) scale(1.1);
+    height: 500px;
+}
+
+.about-page.screens-slider-container img:hover:nth-child(3) {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.about-page.screens-slider-container img:hover:nth-child(4) {
+    transform: translateY(-50%) scale(1.1);
+    height: 500px;
+}
+.about-page.screens-slider-container img:hover:nth-child(5) {
+    transform: translateY(-50%) scale(1.1);
+    height: 500px;
+}
+
+.about-page.screens-slider-container img:nth-child(1) {
+    left: 15%;
+    transform: translateY(-50%);
+    z-index: 7;
+}
+
+.about-page.screens-slider-container img:nth-child(2) {
+    left: 25%;
+    transform: translateY(-50%);
+    z-index: 8;
+}
+
+.about-page.screens-slider-container img:nth-child(3) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+}
+
+.about-page.screens-slider-container img:nth-child(4) {
+    right: 25%;
+    transform: translateY(-50%);
+    z-index: 8;
+}
+
+.about-page.screens-slider-container img:nth-child(5) {
+    right: 15%;
+    transform: translateY(-50%);
+    z-index: 7;
+}
+
+@media(max-width: 1200px) {
+    .about-page.screens-slider-container img:nth-child(1) {
+        left: 0;
+        transform: translateY(-50%);
+        z-index: 7;
+    }
+    
+    .about-page.screens-slider-container img:nth-child(2) {
+        left: 15%;
+        transform: translateY(-50%);
+        z-index: 8;
+    }
+    
+    .about-page.screens-slider-container img:nth-child(4) {
+        right: 15%;
+        transform: translateY(-50%);
+        z-index: 8;
+    }
+    
+    .about-page.screens-slider-container img:nth-child(5) {
+        right: 0;
+        transform: translateY(-50%);
+        z-index: 7;
+    }
+}
+
+@media(min-width: 769px) {
+    .about-page.screens-slider-container {
+        display: block!important;
+    }
+
+    .about-page.screens-image-container {
+        display: none!important;
+    }
+}
+
+@media(max-width: 768px) {
+    .about-page.screens-slider-container {
+        display: none!important;
+    }
+
+    .about-page.screens-image-container {
+        display: block!important;
+    }
+}
+
+.about-page.download-container {
+    background-color: var(--primary-color);
+    padding: 20px;
+    border-radius: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    min-width: 350px;
+}
+
+@media(max-width: 576px) {
+    .about-page.download-container {
+        min-width: unset;
+    }
+}
+
+.about-page.download-container a.download-button {
+    border-radius: 12px;
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    transition: .3s;
+    margin-top: 30px;
+    width: 90%;
+}
+
+.about-page.download-container p {
+    margin-bottom: 0!important;
+    color: white;
+}
+.about-page.download-container .download-subtitle.last {
+    margin-bottom: 30px!important;
+}
+
+@media(max-width: 992px) {
+    .about-page.download-container a.download-button {
+        margin-top: 50px;
+    }
+    .about-page.download-container .download-subtitle.last {
+        margin-bottom: 50px!important;
+    }
+}
+
+.about-page.download-container a.download-button:active {
+    transform: scale(0.95);
+}
+
+.about-page.download-container a.download-button i {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+}
+
+.about-page.download-container a.download-button span {
+    font-family: 'Roboto';
+    margin-left: 10px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+.about-page.download-container .download-subtitle {
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin-top: 10px;
+}

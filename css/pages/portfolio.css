@@ -1,0 +1,344 @@
+.logo-container.portfolio-page p {
+    color: var(--darkprimary-color); 
+}
+
+.navigation-container.portfolio-page a {
+    color: var(--darkprimary-color);
+    transition: .4s;
+}
+
+@media(max-width: 768px) {
+    .navigation-container.portfolio-page a {
+        color: whitesmoke;
+    }
+    .navigation-container.portfolio-page li a.active-page {
+        color: var(--lighterprimary-color);
+    }
+    li.portfolio-li.portfolio-page i.submenu-icon {
+        color: var(--lighterprimary-color);
+    }
+}
+
+.navigation-container.portfolio-page a:hover, .navigation-container.portfolio-page a.active-page:hover {
+    color: var(--primary-color);
+}
+
+.navigation-container.portfolio-page a.active-page {
+    color: var(--navigation-active-page);
+}
+
+.main-title.portfolio-page {
+    font-family: 'Mont';
+    font-size: 70px;
+    transition: .4s;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    width: fit-content;
+}
+
+.main-title.portfolio-page.montserrat-font {
+    font-family: 'Montserrat'!important;
+    font-size: 64px;
+    max-width: 1000px;
+}
+
+@media(max-width: 1200px) {
+    .main-title.portfolio-page.montserrat-font {
+        font-size: 54px;
+    } 
+}
+
+@media(max-width: 768px) {
+    .main-title.portfolio-page.montserrat-font {
+        font-size: 42px;
+    } 
+}
+
+@media(max-width: 576px) {
+    .main-title.portfolio-page.montserrat-font {
+        font-size: 30px;
+    } 
+}
+
+.main-title.portfolio-page.light {
+    color: whitesmoke;
+    background-image: linear-gradient(to left, transparent 51%, whitesmoke 49%);
+}
+
+.main-title.portfolio-page.dark {
+    color: var(--darkprimary-color);
+    background-image: linear-gradient(to left, transparent 51%, var(--darkprimary-color) 49%);
+}
+
+@media(max-width: 768px) {
+    .main-title.portfolio-page {
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 576px) {
+    .main-title.portfolio-page {
+        font-size: 50px;
+    }
+    .main-description.portfolio-page {
+        font-size: 16px!important;
+    }
+}
+
+.main-description.portfolio-page {
+    font-family: 'Roboto';
+    font-size: 18px;
+    transition: .5s;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    width: fit-content;
+}
+
+.main-description.portfolio-page.dark {
+    color: var(--darkgray-color);
+    background-image: linear-gradient(to left, transparent 51%, var(--darkgray-color) 49%);
+}
+
+.main-description.portfolio-page.light {
+    color: whitesmoke;
+    background-image: linear-gradient(to left, transparent 51%, whitesmoke 49%);
+}
+
+.periods-container.portfolio-page .row {
+    min-width: fit-content;
+}
+
+.period-button-container {
+    margin-bottom: 20px;
+}
+
+.period-button.portfolio-page {
+    border: 0!important;
+    padding: 12px 0px;
+    color: white;
+    background-color: var(--darkprimary-color);
+    width: 100%;
+    transition: .1s;
+    font-family: 'Roboto';
+}
+
+@media(min-width: 1200px) {
+    .period-button.portfolio-page {
+        width: 85%!important;
+    }
+}
+
+.projects-button.portfolio-page, .back-button.portfolio-page {
+    border: 0!important;
+    padding: 10px 0px;
+    color: white;
+    background-color: var(--darkprimary-color);
+    transition: .1s;
+    font-family: 'Roboto';
+    width: 20%;
+    min-width: 150px;
+    max-width: 200px;
+    user-select: none;
+}
+
+.projects-button.portfolio-page i, .back-button.portfolio-page i {
+    margin-right: 10px;
+}
+
+.projects-button.portfolio-page {
+    margin-top: 10px;
+}
+
+.period-button.portfolio-page:active:not(:disabled), .projects-button.portfolio-page:active:not(:disabled), .back-button.portfolio-page:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+.period-button.portfolio-page:disabled {
+    opacity: .1;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+@media(min-width: 768px) {
+    .periods-container.portfolio-page .col-md-3:nth-child(2) .period-button.portfolio-page, .periods-container.portfolio-page .col-md-3:nth-child(4) .period-button.portfolio-page, .periods-container.portfolio-page .col-md-3:nth-child(5) .period-button.portfolio-page, .periods-container.portfolio-page .col-md-3:nth-child(7) .period-button.portfolio-page {
+        background-color: var(--primary-color);
+    }
+}
+
+@media(max-width: 767px) {
+    .periods-container.portfolio-page .col-md-3:nth-child(2) .period-button.portfolio-page, .periods-container.portfolio-page .col-md-3:nth-child(4) .period-button.portfolio-page, .periods-container.portfolio-page .col-md-3:nth-child(6) .period-button.portfolio-page, .periods-container.portfolio-page .col-md-3:nth-child(8) .period-button.portfolio-page {
+        background-color: var(--primary-color);
+    }
+}
+
+#swup.portfolio-page {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* .shape-img.portfolio-page {
+    position: absolute;
+    filter: drop-shadow(0px 0px 5px rgba(0,0,0,0.2));
+    opacity: .8;
+    pointer-events: none!important;
+    z-index: -1;
+    filter: hue-rotate(90deg);
+}
+
+.shape-img.portfolio-page.five {
+    width: 220px;
+    height: 220px;
+    top: 4%;
+    right: 10%;
+}
+
+.shape-img.portfolio-page.six {
+    width: 220px;
+    height: 220px;
+    bottom: -90px;
+    right: 10%;
+}
+
+@media(max-width: 768px) {
+    .shape-img.portfolio-page.six {
+        right: 8%;
+    }
+}
+
+@media(max-width: 576px) {
+    .shape-img.portfolio-page {
+        display: none;
+    }
+} */
+
+#banner.portfolio-page {
+    color: white;
+    background-color: var(--portfolio-banner-color);
+    padding: 100px 0;
+    position: relative;
+}
+
+@media(max-width: 576px) {
+    #banner.portfolio-page {
+        padding: 60px 0!important;
+    }
+}
+
+.period-number.portfolio-page {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15%;
+    font-family: 'Roboto';
+    font-size: 120px;
+    opacity: .4;
+    color: transparent;
+    -webkit-text-stroke: 1px whitesmoke;
+    user-select: none;
+    pointer-events: none;
+}
+
+@media(max-width: 992px) {
+    .period-number.portfolio-page {
+        top: 40%;
+        right: 10%!important;
+    }
+}
+
+@media(max-width: 576px) {
+    .period-number.portfolio-page {
+        display: none;
+    }
+}
+
+.shape-divider-bottom.portfolio-page {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divider-bottom.portfolio-page svg {
+    max-height: 150px;
+}
+
+#breadcrumb.portfolio-page ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Roboto';
+    padding: 15px 30px;
+    background-color: #f8f9fa;
+    border-radius: 15px 0;
+    flex-wrap: wrap;
+    user-select: none;
+}
+
+#breadcrumb.portfolio-page ul a {
+    color: var(--primary-color);
+    display: flex;
+    text-decoration: none!important;
+}
+
+#breadcrumb.portfolio-page ul a:not(:last-child) li {
+    text-decoration: underline!important;
+}
+
+#breadcrumb.portfolio-page ul a:not(:last-child)::after {
+    content: '»';
+    font-weight: bold;
+    padding: 0 10px;
+    color: black;
+    opacity: .7;
+    text-decoration: none!important;
+    pointer-events: none;
+}
+
+#breadcrumb.portfolio-page .current-page {
+    text-decoration: none!important;
+    color: var(--breadcrumb-current-color);
+}
+
+.first-period-container.portfolio-page {
+    margin-top: 40px!important;
+}
+
+#period-container.portfolio-page .title.portfolio-page {
+    font-family: 'Montserrat', sans-serif;
+    transition: .4s;
+    color: var(--darkprimary-color);
+}
+
+#period-container.portfolio-page.last {
+    position: relative;
+}
+
+@media(max-width: 768px) {
+    #period-container.portfolio-page .title.portfolio-page {
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 576px) {
+    #period-container.portfolio-page .title.portfolio-page {
+        font-size: 25px;
+    }
+}
+
+.professor-name.portfolio-page {
+    font-weight: bold;
+}
+
+.professor-name.portfolio-page span {
+    font-weight: normal;
+    color: var(--professor-name-color);
+}
+
+hr.divisor.portfolio-page {
+    background-color: var(--primary-color);
+    width: 80px;
+    padding: 4px;
+    border-radius: 50px;
+}
+
+hr.period-divisor.portfolio-page {
+    margin-top: 4rem!important;
+    margin-bottom: 4rem!important;
+}

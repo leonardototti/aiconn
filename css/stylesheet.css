@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+@import url('/css/components/header.css');
+@import url('/css/components/footer.css');
+
+@import url('/css/pages/about.css');
+@import url('/css/pages/index.css');
+@import url('/css/pages/notfound.css');
+@import url('/css/pages/period.css');
+@import url('/css/pages/portfolio.css');
+@import url('/css/pages/who.css');
+
+:root {
+    /* Paleta de cores do site */
+    --primary-color: #FF2255;
+    --alphaprimary-color: #2125291a;
+    --darkprimary-color: #212529;
+    --lightprimary-color: #559999; 
+    --lighterprimary-color: #CCDDCC;
+    --lightererprimary-color: #EEEEDD;
+
+    --index-buttons-hover-color: #FF2255;
+    --index-copyright-a-color: #ffa2b7;
+    --portfolio-banner-color: #1a1b1d;
+    --professor-name-color: #212121;
+    --breadcrumb-current-color: gray;
+    --swup-progressbar-background: #FF2255;
+    --footer-color: #1e1e1e;
+    --navigation-hover-color: #b2c3c3;
+    --navigation-active-page: #73b9b9;
+
+    --darkgray-color: #4e4e4e;
+
+    /* Gradiente do círculo da página inicial está na linha 45 do index.css */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none!important;
+    font-family: 'Roboto';
+}
+
+body {
+    transition: opacity .8s;
+    background-color: #d8d8d8;
+    overflow-x: hidden!important;
+    min-height: 100vh;
+}
+
+main {
+    min-height: 100vh;
+}
+
+@font-face {
+    font-family: 'AzeretMono-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url('../font/AzeretMono-Regular.woff');
+}
+
+@font-face {
+    font-family: 'Strasua';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url('../font/strasua.ttf');
+}
+
+@font-face {
+    font-family: 'Mont';
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url('../font/Mont.otf');
+}
+
+.swup-progress-bar {
+    background-color: var(--swup-progressbar-background);
+}
+
+.content-start {
+    margin-top: 50px;
+}
+
+.fix-col {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+@media (min-width: 1200px) {
+    .container:not(.normal-container) {
+        max-width: 1300px!important;
+    }
+}
+
+.remove-scroll {
+    overflow: hidden;
+}
+
+.remove-scroll * {
+    opacity: 0;
+}
+
+img {
+    user-select: none!important;
+}
+
+.page-transition {
+    transition: .3s;
+    transform: scale(1) translateX(0);
+    opacity: 1;
+}
+
+html.is-animating.to-homepage .page-transition {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+html.is-animating.to-quem-somos .page-transition {
+    opacity: 0;
+    transform: translateX(300px);
+}
+
+html.is-animating.to-sobre .page-transition {
+    opacity: 0;
+    transform: scale(1.1);
+}
+
+html.is-animating .main-title, html.is-animating .main-description {
+    background-position: 0 0!important;
+    opacity: 0;
+}
+
+.overlay-menu {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    position: absolute;
+    z-index: 4;
+    background-color: rgba(0,0,0,.3);
+    transition: .2s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.overlay-menu.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media(max-width: 768px) {
+    .overlay-menu {
+        opacity: 0!important;
+        display: none;
+    }
+}
+
+.button-a-expand {
+    padding: 15px 0;
+}

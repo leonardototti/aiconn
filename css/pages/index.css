@@ -1,0 +1,194 @@
+main.index-page {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--darkprimary-color)!important;
+    color: whitesmoke;
+    display: flex!important;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    position: relative;
+}
+
+.navbar-container.index-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 0!important;
+}
+
+.navigation-container.index-page a {
+    color: whitesmoke;
+    transition: .4s;
+}
+
+.navigation-container.index-page a:hover {
+    color: var(--navigation-hover-color)!important;
+}
+
+.navigation-container.index-page a.active-page {
+    color: var(--lighterprimary-color);
+}
+
+.logo-container.index-page p {
+    color: white;
+}
+
+.circle.index-page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to left top, #ff2255, #e61c49, #cd153e, #b50e33, #9d0729);
+    clip-path: circle(65% at right);
+    z-index: -1;
+    transition: .3s;
+}
+
+.planet-img.index-page {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    z-index: -1;
+    width: 35%!important;
+    height: auto!important;
+    filter: drop-shadow(0px 0px 50px black);
+    user-select: none;
+    transition: .3s;
+    animation: pulseIndex 4s infinite linear;
+}
+
+@media(max-width: 768px) {
+    .planet-img.index-page {
+        width: 60%!important;
+    }    
+}
+
+@media(max-width: 576px) {
+    .planet-img.index-page {
+        width: 75%!important;
+        filter: drop-shadow(0px 0px 50px black) brightness(.7);
+    }    
+}
+
+@keyframes pulseIndex {
+    0% {
+        transform: scale(1) rotate(0deg) translateY(-50%);
+        top: 50%;
+    }
+    50% {
+        transform: scale(1.03) translateY(-50%);
+        top: 50%;
+    }
+    55% {
+        transform: scale(1.03) translateY(-50%);
+        top: 50%;
+    }
+    100% {
+        transform: scale(1) translateY(-50%);
+        top: 50%;
+    }
+}
+
+.main-title.index-page {
+    font-family: 'Strasua';
+    font-size: 70px;
+    color: white;
+    z-index: 4;
+    transition: .4s;
+    background-position: 100% 0;
+    background-size: 200% 101%;
+    background-image: linear-gradient(to left, transparent 51%, #fff 49%);
+    width: fit-content;
+}
+
+
+@media(max-width: 768px) {
+    .main-title.index-page {
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 576px) {
+    .main-title.index-page {
+        font-size: 55px;
+        margin-top: 40px;
+    }
+}
+
+.main-description.index-page {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: white;
+    transition: .5s;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, transparent 51%, #fff 49%);
+    width: fit-content;
+}
+
+.buttons-container.index-page {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.buttons-container.index-page button {
+    border: 0!important;
+    border-radius: 10px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: .4s;
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
+    outline: none!important;
+}
+
+.buttons-container.index-page .light button {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.buttons-container.index-page .dark button {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.buttons-container.index-page .light button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.buttons-container.index-page .dark button:hover {
+    background-color: white;
+    color: var(--primary-color);
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.8);
+}
+
+.buttons-container.index-page button:active {
+    transform: scale(0.95);
+}
+
+.buttons-container.index-page i {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.copyright-container.index-page {
+    padding: 30px;
+    padding-top: 10px;
+}
+
+.copyright-container.index-page p {
+    margin-bottom: 0!important;
+}
+
+.copyright-container.index-page p a {
+    color: var(--index-copyright-a-color);
+}

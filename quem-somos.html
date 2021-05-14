@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script data-swup-ignore-script defer src="https://kit.fontawesome.com/5f36581569.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/js/SwupHeadPlugin.js"></script>
+    <script src="/js/SwupPreloadPlugin.js"></script>
+    <script src="/js/SwupProgressPlugin.js"></script>
+    <script src="/js/SwupSlideTheme.js"></script>
+    <script src="/js/SwupScriptsPlugin.js"></script>
+
+    <script async src="/js/main.js"></script>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
+
+    <link rel="preload" href="/css/stylesheet.css" as="style">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="/css/burger.css">
+
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" as="style"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Aiconn - Quem somos</title>
+</head>
+
+<body style="opacity: 0;">
+    <main id="swup" class="who-page page-transition">
+        <div class="overlay-menu"></div>
+        <header id="navbar" class="who-page navbar-container">
+            <div class="who-page container">
+                <div class="who-page logo-container">
+                    <img src="/img/logo-aiconn.svg" alt="Logo" height="50px" width="auto"/>
+                </div>
+                <nav>
+                    <ul class="who-page navigation-container">
+                        <li><a data-swup-preload href="/">inicio</a></li>
+                        <li><a data-swup-preload href="/sobre">sobre</a></li>
+                        <li><a data-swup-preload class="who-page active-page" href="/quem-somos">quem somos</a></li>
+                        <li class="who-page portfolio-li"><a data-swup-preload href="/portfolio">portfolio</a> <i onclick="toggleSubMenu();"
+                            class="who-page fas fa-chevron-down submenu-icon"></i>
+                            <ul class="who-page portfolio-submenu">
+                                <a href="/portfolio/primeiro-periodo">
+                                    <li>1º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>2º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>3º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>4º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>5º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>6º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>7º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>8º Período</li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button onclick="toggleMainMenu();" class="who-page hamburger hamburger--collapse" type="button">
+                        <span class="who-page hamburger-box">
+                            <span class="who-page hamburger-inner"></span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="who-page container container-conteudo content-start">
+            <h1 class="who-page main-title">Quem somos</h1>
+            <p class="who-page main-description">Conheça um pouco sobre cada integrante do Aiconn.</p>
+        </div>
+
+        <script>
+            function idade(ano_aniversario, mes_aniversario, dia_aniversario, id) {
+                var d = new Date,
+                    ano_atual = d.getFullYear(),
+                    mes_atual = d.getMonth() + 1,
+                    dia_atual = d.getDate(),
+
+                    ano_aniversario = +ano_aniversario,
+                    mes_aniversario = +mes_aniversario,
+                    dia_aniversario = +dia_aniversario,
+
+                    quantos_anos = ano_atual - ano_aniversario;
+
+                if (mes_atual < mes_aniversario || mes_atual == mes_aniversario && dia_atual < dia_aniversario) {
+                    quantos_anos--;
+                }
+
+                document.getElementById(id).innerHTML = quantos_anos < 0 ? 0 : quantos_anos
+            }
+        </script>
+
+        <section id="leonardo">
+            <div class="who-page container content-start">
+                <div class="who-page row personal-container">
+                    <div class="who-page col image-container">
+                        <span class="who-page role-text left first">Desenvolvedor</span>
+                        <img src="/img/leo.webp" alt="Leonardo" width="20%" height="auto">
+                    </div>
+                    <div class="who-page col-sm-7 col-md-6 info-box-container">
+                        <div class="who-page info-box">
+                            <span class="role-badge-mobile">Desenvolvedor</span>
+                            <h2 class="who-page personal-name">Leonardo Totti</h2>
+                            <a href="mailto:leonardo.totti@edu.unifil.br">
+                                <p class="who-page personal-email">leonardo.totti@edu.unifil.br</p>
+                            </a>
+                            <p class="who-page personal-bio">Tenho <span id="leonardo_idade">
+                                    <script defer>
+                                        idade(2001, 10, 27, 'leonardo_idade');
+                                    </script>
+                                </span> anos, sou aluno de Engenharia de Software na Unifil e Desenvolvedor Web Front-end.</p>
+                            <div class="who-page social-links-container">
+                                <ul>
+                                    <li><a href="https://github.com/leoctotti" target="_blank"
+                                            rel="noopener noreferrer"><i class="who-page fab fa-github"></i></a></li>
+                                    <li><a disabled target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="victor">
+            <div class="who-page shape-divider-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path fill="white"
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="who-page container content-start">
+                <div class="who-page row personal-container">
+                    <div class="who-page col image-container">
+                        <span class="who-page role-text right second">Desenvolvedor</span>
+                        <img src="/img/Victor.webp" alt="Victor" width="20%" height="auto">
+                    </div>
+                    <div class="who-page col-sm-7 col-md-6 info-box-container">
+                        <div class="who-page info-box">
+                            <span class="role-badge-mobile">Desenvolvedor</span>
+                            <h2 class="who-page personal-name">Victor Ferri</h2>
+                            <a href="mailto:victor.ferri@edu.unifil.br">
+                                <p class="who-page personal-email">victor.ferri@edu.unifil.br</p>
+                            </a>
+                            <p class="who-page personal-bio">Tenho <span id="victor_idade">
+                                    <script defer>
+                                        idade(2003, 08, 23, 'victor_idade');
+                                    </script>
+                                </span> anos, curso Eng. de Software na Unifil e desenvolvo games desde 2015 com atuação
+                                em Game Designer, Programação e Direção Criativa. Além da faculdade, faço diversos
+                                cursos em plataformas reconhecidas, como DankiCode e Udemy, sendo a maioria deles cursos
+                                de programação.</p>
+                            <div class="who-page social-links-container">
+                                <ul>
+                                    <li><a href="https://github.com/VictorFerriUnifil" target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-github"></i></a></li>
+                                    <li><a disabled target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="who-page shape-divider-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path fill="white"
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="who-page shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section id="davi">
+            <div class="who-page container content-start">
+                <div class="who-page row personal-container">
+                    <div class="who-page col image-container">
+                        <span class="who-page role-text left third">Desenvolvedor</span>
+                        <img src="/img/Davi.webp" alt="Leonardo" width="20%" height="auto">
+                    </div>
+                    <div class="who-page col-sm-7 col-md-6 info-box-container">
+                        <div class="who-page info-box">
+                            <span class="role-badge-mobile">Desenvolvedor</span>
+                            <h2 class="who-page personal-name">Davi Medeiros</h2>
+                            <a href="mailto:davimedeirosantonino@edu.unifil.br">
+                                <p class="who-page personal-email">davimedeirosantonino@edu.unifil.br</p>
+                            </a>
+                            <p class="who-page personal-bio">Tenho <span id="davi_idade">
+                                    <script defer>
+                                        idade(2002, 02, 19, 'davi_idade');
+                                    </script>
+                                </span> anos, sou aluno de engenharia de software na UniFil.</p>
+                            <div class="who-page social-links-container">
+                                <ul>
+                                    <li><a href="https://github.com/Antonino0" target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-github"></i></a></li>
+                                    <li><a disabled target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gabriel">
+            <div class="who-page shape-divider-top">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path fill="white"
+                        d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z">
+                    </path>
+                </svg>
+            </div>
+            <div class="who-page container content-start">
+                <div class="who-page row personal-container">
+                    <div class="who-page col image-container">
+                        <span class="who-page role-text right fourth">Desenvolvedor</span>
+                        <img src="/img/Gabriel.webp" alt="Gabriel" width="20%" height="auto">
+                    </div>
+                    <div class="who-page col-sm-7 col-md-6 info-box-container">
+                        <div class="who-page info-box">
+                            <span class="role-badge-mobile">Desenvolvedor</span>
+                            <h2 class="who-page personal-name">Gabriel Pereira</h2>
+                            <a href="mailto:gabrielnino@edu.uniffil.br">
+                                <p class="who-page personal-email">gabrielnino@edu.unifil.br</p>
+                            </a>
+                            <p class="who-page personal-bio">Tenho <span id="gabriel_idade">
+                                    <script defer>
+                                        idade(2000, 07, 27, 'gabriel_idade');
+                                    </script>
+                                </span> anos, Desenvolvedor Python, aluno de Engenharia de Software na Unifil, mixer e
+                                musicista nas horas vagas.</p>
+                            <div class="who-page social-links-container">
+                                <ul>
+                                    <li><a href="https://github.com/gabrielniino" target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-github"></i></a></li>
+                                    <li><a disabled target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="who-page shape-divider-bottom">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path fill="white"
+                        d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                        class="who-page shape-fill"></path>
+                </svg>
+            </div>
+        </section>
+
+        <section id="pedro">
+            <div class="who-page container content-start">
+                <div class="who-page row personal-container">
+                    <div class="who-page col image-container">
+                        <span class="who-page role-text left third">Desenvolvedor</span>
+                        <img src="/img/Pedro.webp" alt="Leonardo" width="20%" height="auto">
+                    </div>
+                    <div class="who-page col-sm-7 col-md-6 info-box-container">
+                        <div class="who-page info-box">
+                            <span class="role-badge-mobile">Desenvolvedor</span>
+                            <h2 class="who-page personal-name">Pedro Evangelista</h2>
+                            <a href="mailto:pdrevangelista@edu.unifil.br">
+                                <p class="who-page personal-email">pdrevangelista@edu.unifil.br</p>
+                            </a>
+                            <p class="who-page personal-bio">Tenho <span id="pedro_idade">
+                                    <script defer>
+                                        idade(2003, 07, 14, 'pedro_idade');
+                                    </script>
+                                </span> anos, sou aluno de engenharia de software na UniFil.</p>
+                            <div class="who-page social-links-container">
+                                <ul>
+                                    <li><a href="https://github.com/pdrevangelista" target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-github"></i></a></li>
+                                    <li><a disabled target="_blank" rel="noopener noreferrer"><i
+                                                class="who-page fab fa-linkedin-in"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer container">
+                <div class="footer row">
+                    <div class="footer col-md-12" style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                        <img src="/img/logo-aiconn.svg" alt="Logo" height="40px">
+                        <img src="/img/logo-unifil.svg" alt="Unifil" height="60px">
+                    </div>
+                    
+                    <div class="col-md">
+                        <p class="footer copyright">&copy; <span id="current_year"></span> Aiconn, Projeto Interdisciplinar, Unifil</p>
+                    </div>
+                    <div class="footer col-md text-right">
+                        <p>Startup desenvolvida para o Projeto Interdisciplinar da <a href="https://unifil.br" target="_blank" rel="noopener noreferrer">Unifil</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        window.onload = () => {
+            document.body.removeAttribute("style");
+            document.getElementById("current_year").innerHTML = new Date().getFullYear();
+        }
+    </script>
+    <script data-swup-ignore-script>
+        const swup = new Swup({
+            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+                new SwupSlideTheme(), new SwupScriptsPlugin() ],
+            animateHistoryBrowsing: true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</body>
+
+</html>

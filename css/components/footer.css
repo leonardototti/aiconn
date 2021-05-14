@@ -1,0 +1,19 @@
+footer {
+    padding: 40px 20px;
+    background-color: var(--footer-color);
+}
+
+footer h3 {
+    color: whitesmoke;
+    font-family: 'Mont';
+    margin-bottom: 0!important;
+}
+
+footer p {
+    color: whitesmoke;
+    font-family: 'Roboto';
+}
+
+footer a {
+    color: var(--primary-color)!important;
+}

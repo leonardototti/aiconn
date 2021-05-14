@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script data-swup-ignore-script defer src="https://kit.fontawesome.com/5f36581569.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/js/SwupHeadPlugin.js"></script>
+    <script src="/js/SwupPreloadPlugin.js"></script>
+    <script src="/js/SwupProgressPlugin.js"></script>
+    <script src="/js/SwupSlideTheme.js"></script>
+    <script src="/js/SwupScriptsPlugin.js"></script>
+
+    <script async src="/js/main.js"></script>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
+
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/burger.css">
+
+    <link rel="preload" href="/css/pages/portfolio.css" as="style">
+    <link rel="stylesheet" href="/css/pages/portfolio.css">
+
+    <link rel="preload" href="/css/pages/index.css" as="style">
+    <link rel="preload" href="/css/pages/about.css" as="style">
+    <link rel="preload" href="/css/pages/who.css" as="style">
+
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" as="style"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Aiconn - Desenvolvimento de Aplicativos Móveis</title>
+</head>
+
+<body style="opacity: 0;">
+    <main id="swup" class="portfolio-page page-transition">
+        <div class="overlay-menu"></div>
+        <header id="navbar" class="portfolio-page navbar-container">
+            <div class="portfolio-page container">
+                <div class="portfolio-page logo-container">
+                    <img src="/img/logo-aiconn.svg" alt="Logo" height="50px" width="auto"/>
+                </div>
+                <nav>
+                    <ul class="portfolio-page navigation-container">
+                        <li><a data-swup-preload href="/">inicio</a></li>
+                        <li><a data-swup-preload href="/sobre">sobre</a></li>
+                        <li><a data-swup-preload href="/quem-somos">quem somos</a></li>
+                        <li class="portfolio-page portfolio-li"><a class="who-page active-page" data-swup-preload href="/portfolio">portfolio</a> <i onclick="toggleSubMenu();"
+                            class="portfolio-page fas fa-chevron-down submenu-icon"></i>
+                            <ul class="portfolio-page portfolio-submenu">
+                                <a href="/portfolio/primeiro-periodo">
+                                    <li>1º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>2º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>3º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>4º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>5º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>6º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>7º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>8º Período</li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button onclick="toggleMainMenu();" class="portfolio-page hamburger hamburger--collapse" type="button">
+                        <span class="portfolio-page hamburger-box">
+                            <span class="portfolio-page hamburger-inner"></span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <section id="banner" class="portfolio-page">
+            <span class="portfolio-page period-number">1º</span>
+            <div class="portfolio-page container content-start">
+                <h1 class="portfolio-page main-title montserrat-font light">Desenvolvimento de <br/>Aplicativos Móveis</h1>
+                <p class="portfolio-page main-description light">Os projetos desenvolvidos na disciplina de <strong>Desenvolvimento de Aplicativos Móveis</strong> estão disponíveis aqui.</p>
+            </div>
+        </section>
+        <div class="portfolio-page shape-divider-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path fill="#1a1b1d" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
+            </svg>
+        </div>
+
+        <section id="breadcrumb" class="portfolio-page">
+            <div class="portfolio-page container normal-container">
+                <ul>
+                    <a href="/">
+                        <li>Início</li>
+                    </a>
+                    <a href="/portfolio/">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="/portfolio/primeiro-periodo/">
+                        <li>Primeiro Período</li>
+                    </a>
+                    <a class="portfolio-page current-page" href="#">
+                        <li>Desenvolvimento de Aplicativos Móveis</li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+
+        <section id="period_content" class="content-start desenvolvimento-apps">
+            <div class="container normal-container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2>O que é o Aiconn?</h2>
+                        <p class="text-justify">O Aiconn é um aplicativo que trabalha com comunidades diversas do mundo gamer e também do mundo geek, trazendo
+                            a informação do interesse do usuário. De fácil acesso e também de fácil uso, o app categoriza os assuntos para
+                            disponibilizar ao usuário um conteúdo direcionado ao que está sendo procurado, dando uma experiência melhor a ele,
+                            com maior satisfação para consumir, utilizar o app e se aprofundar mais.</p>
+                        <p class="text-justify">Com o Aiconn, será possível criar comunidades dos mais diversos assuntos, podendo entrar em uma das diversas
+                            comunidades públicas existentes ou criar sua própria, podendo ser tanto pública como privada, e possuindo seus próprios
+                            chats e postagens. A maior prioridade do aplicativo está em assegurar que a comunicação entre usuários e comunidades
+                            esteja ocorrendo sem problemas.
+                        </p>
+                        <br/>
+                        <h2>Páginas</h2>
+                        <p></p>
+                        <div class="row">
+                            <div class="col-md">
+                                <a class="btn btn-light" style="width: 100%; font-weight: bold; padding: 12px 0px; box-shadow: 0px 0px 20px 0px rgba(0,0,0,.1); margin-bottom: 15px;" href="/">Início</a>
+                                <p>Pagina inicial com o nome e descrição resumida da startup.</p>
+                            </div>
+                            <div class="col-md">
+                                <a class="btn btn-light" style="width: 100%; font-weight: bold; padding: 12px 0px; box-shadow: 0px 0px 20px 0px rgba(0,0,0,.1); margin-bottom: 15px;" href="/quem-somos">Quem somos</a>
+                                <p>Página da equipe com os membros e cargos na startup.</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <h2>Protótipo</h2>
+                        <p>Até então foi desenvolvido o protótipo da aplicação pelo <a href="https://appinventor.mit.edu" target="_blank" rel="noopener noreferrer">MIT App Inventor</a>, como pode ser visto a seguir:</p>
+                        <div class="row">
+                            <div class="col-md-6 text-center">
+                                <img src="/img/screens/registro.png" width="90%" alt="Tela de Registro">
+                                <p style="margin-top: 15px;">Tela de registro para criação de contas.</p>
+                                <br/>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="/img/screens/login.png" width="90%" alt="Tela de Login">
+                                <p style="margin-top: 15px;">Tela de login para o acesso a contas.</p>
+                                <br/>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="/img/screens/preferencias.png" width="90%" alt="Tela de Preferências">
+                                <p style="margin-top: 15px;">Tela de preferências para o usuário selecionar e seguir categorias de seu interesse.</p>
+                                <br/>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="/img/screens/criando-comunidade.png" width="90%" alt="Criando comunidades">
+                                <p style="margin-top: 15px;">Tela de criação de comunidades.</p>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="/img/screens/lista-comunidades.png" width="90%" alt="Lista de comunidades">
+                                <p style="margin-top: 15px;">Tela que lista as comunidades.</p>
+                            </div>
+                        </div>
+                        <br/>
+                        <h2>Vídeo</h2>
+                        <p>Um vídeo apresentando o aplicativo e suas principais telas.</p>
+                        <iframe width="100%" height="auto" style="aspect-ratio: 16 / 9; margin-bottom: 30px;" src="https://www.youtube.com/embed/1vlbVBlNwFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="download-column">
+                            <a data-no-swup class="btn btn-light download-button" role="button" href="/files/Aiconn.aia" download>
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <span>AICONN.AIA</span>
+                            </a>
+                            <p class="download-subtitle">Clique no botão para baixar a aplicação no MIT App Inventor.</p>
+
+                            <a data-no-swup class="btn btn-light download-button" role="button" href="/files/Telas.zip" download>
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <span>TELAS.ZIP</span>
+                            </a>
+                            <p class="download-subtitle">Clique no botão para baixar a cópia das telas.</p>
+                            
+                            <a style="margin-top: 50px;" data-no-swup class="btn btn-light download-button" role="button" href="/files/Apresentacao.pptx" download>
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <span>APRESENTACAO.PPTX</span>
+                            </a>
+                            <p class="download-subtitle last">Clique no botão para baixar a apresentação do Aiconn no PowerPoint.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer container">
+                <div class="footer row">
+                    <div class="footer col-md-12" style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                        <img src="/img/logo-aiconn.svg" alt="Logo" height="40px">
+                        <img src="/img/logo-unifil.svg" alt="Unifil" height="60px">
+                    </div>
+                    
+                    <div class="col-md">
+                        <p class="footer copyright">&copy; <span id="current_year"></span> Aiconn, Projeto Interdisciplinar, Unifil</p>
+                    </div>
+                    <div class="footer col-md text-right">
+                        <p>Startup desenvolvida para o Projeto Interdisciplinar da <a href="https://unifil.br" target="_blank" rel="noopener noreferrer">Unifil</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        window.onload = () => {
+            document.body.removeAttribute("style");
+            document.getElementById("current_year").innerHTML = new Date().getFullYear();
+        }
+    </script>
+    <script data-swup-ignore-script>
+        const swup = new Swup({
+            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+                new SwupSlideTheme(), new SwupScriptsPlugin() ],
+            animateHistoryBrowsing: true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</body>
+
+</html>

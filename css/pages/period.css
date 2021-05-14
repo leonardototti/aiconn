@@ -1,0 +1,122 @@
+#period_content {
+    margin-bottom: 50px;
+}
+
+#period_content h2 {
+    font-family: 'Montserrat';
+}
+
+#period_content p {
+    font-family: 'Roboto';
+}
+
+#period_content a:not(.download-button) {
+    color: var(--primary-color);
+}
+
+#period_content .professor-span-container {
+    margin-bottom: 20px;
+}
+
+#banner .professor-span-container .professor-span {
+    color: white;
+    font-family: 'Roboto';
+    background-color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 10px;
+}
+
+#period_content.gestao-de-pessoas p span {
+    font-weight: bold;
+}
+
+#period_content.gestao-de-pessoas p span {
+    font-weight: bold;
+}
+
+#period_content.gestao-de-pessoas .image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#period_content.gestao-de-pessoas .image-container img {
+    max-width: 350px;
+}
+
+#period_content .download-column {
+    background-color: var(--primary-color);
+    height: 100%;
+    padding: 20px;
+    border-radius: 15px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: fit-content;
+}
+
+@media(max-width: 1200px) {
+    #period_content.logica-e-programacao-de-algoritmos .download-column {
+        padding: 0px;
+    }
+} 
+
+#period_content .download-column p {
+    margin-bottom: 0!important;
+    color: white;
+}
+
+#period_content a.download-button {
+    border-radius: 12px;
+    display: flex;
+    padding: 10px 15px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    transition: .3s;
+    margin-top: 30px;
+    width: 90%;
+}
+
+#period_content .download-subtitle.last {
+    margin-bottom: 30px!important;
+}
+
+@media(max-width: 992px) {
+    #period_content a.download-button {
+        margin-top: 50px;
+    }
+    #period_content .download-subtitle.last {
+        margin-bottom: 50px!important;
+    }
+}
+
+#period_content a.download-button:active {
+    transform: scale(0.95);
+}
+
+#period_content a.download-button i {
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 50px;
+}
+
+#period_content a.download-button span {
+    font-family: 'Roboto';
+    margin-left: 10px;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+#period_content .download-subtitle {
+    font-family: 'Roboto';
+    font-size: 12px;
+    margin-top: 10px;
+}

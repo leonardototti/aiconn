@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script data-swup-ignore-script defer src="https://kit.fontawesome.com/5f36581569.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/js/SwupHeadPlugin.js"></script>
+    <script src="/js/SwupPreloadPlugin.js"></script>
+    <script src="/js/SwupProgressPlugin.js"></script>
+    <script src="/js/SwupSlideTheme.js"></script>
+    <script src="/js/SwupScriptsPlugin.js"></script>
+
+    <script async src="/js/main.js"></script>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
+
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/burger.css">
+
+    <link rel="preload" href="/css/pages/portfolio.css" as="style">
+    <link rel="stylesheet" href="/css/pages/portfolio.css">
+
+    <link rel="preload" href="/css/pages/index.css" as="style">
+    <link rel="preload" href="/css/pages/about.css" as="style">
+    <link rel="preload" href="/css/pages/who.css" as="style">
+
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" as="style"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Aiconn - Gestão de Pessoas</title>
+</head>
+
+<body style="opacity: 0;">
+    <main id="swup" class="portfolio-page page-transition">
+        <div class="overlay-menu"></div>
+        <header id="navbar" class="portfolio-page navbar-container">
+            <div class="portfolio-page container">
+                <div class="portfolio-page logo-container">
+                    <img src="/img/logo-aiconn.svg" alt="Logo" height="50px" width="auto"/>
+                </div>
+                <nav>
+                    <ul class="portfolio-page navigation-container">
+                        <li><a data-swup-preload href="/">inicio</a></li>
+                        <li><a data-swup-preload href="/sobre">sobre</a></li>
+                        <li><a data-swup-preload href="/quem-somos">quem somos</a></li>
+                        <li class="portfolio-page portfolio-li"><a class="who-page active-page" data-swup-preload href="/portfolio">portfolio</a> <i onclick="toggleSubMenu();"
+                            class="portfolio-page fas fa-chevron-down submenu-icon"></i>
+                            <ul class="portfolio-page portfolio-submenu">
+                                <a href="/portfolio/primeiro-periodo">
+                                    <li>1º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>2º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>3º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>4º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>5º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>6º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>7º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>8º Período</li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button onclick="toggleMainMenu();" class="portfolio-page hamburger hamburger--collapse" type="button">
+                        <span class="portfolio-page hamburger-box">
+                            <span class="portfolio-page hamburger-inner"></span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <section id="banner" class="portfolio-page">
+            <span class="portfolio-page period-number">1º</span>
+            <div class="portfolio-page container content-start">
+                <h1 class="portfolio-page main-title montserrat-font light">Gestão de Pessoas</h1>
+                <p class="portfolio-page main-description light">Os projetos desenvolvidos na disciplina de <strong>Gestão de Pessoas</strong> estão disponíveis aqui.</p>
+                <div class="professor-span-container">
+                    <span class="professor-span"><strong>Professor:</strong> Sérgio Antunes</span>
+                </div>
+            </div>
+        </section>
+        <div class="portfolio-page shape-divider-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path fill="#1a1b1d" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
+            </svg>
+        </div>
+
+        <section id="breadcrumb" class="portfolio-page">
+            <div class="portfolio-page container normal-container">
+                <ul>
+                    <a href="/">
+                        <li>Início</li>
+                    </a>
+                    <a href="/portfolio/">
+                        <li>Portfolio</li>
+                    </a>
+                    <a href="/portfolio/primeiro-periodo/">
+                        <li>Primeiro Período</li>
+                    </a>
+                    <a class="portfolio-page current-page" href="#">
+                        <li>Gestão de Pessoas</li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+
+        <section id="period_content" class="content-start gestao-de-pessoas">
+            <div class="container normal-container">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <h2>O que é Reengenharia?</h2>
+                        <p class="text-justify">A reengenharia é uma ferramenta da gestão de pessoas e consiste em reprojetar sistematicamente toda uma organização.
+                            Sua composição são propostas mudanças radicais na organização do trabalho, rompendo com estruturas tradicionais, ou seja, eliminando costumes obsoletos.
+                            <br/>Sua implementação não se dá de forma gradual, mas imediata, razão pela qual seus principais autores indicam como suas características principais: o repensar fundamental, a mudança radical, a melhoria drástica e o aperfeiçoamento de processos.
+                            Também é dividida em tipos, sendo eles:</p>
+                        <p><span class="text-bold">De negócio:</span> repensar e recriar o negócio como um todo;</p>
+                        <p><span>Cultural:</span> relacionado a mudança da filosofia e de valores no trabalho;</p>
+                        <p><span>Estratégica:</span> busca recriar a forma de ser da empresa;</p>
+                        <p><span>De sistema:</span> mudança na forma de processar a informação com nova tecnologia;</p>
+                        <p><span>De informação:</span> mudanças no uso de hardware e software;</p>
+                        <p><span>De processo:</span> procura reinventar cada processo analisado.</p>
+                        <br/>
+                        <h2>Objetivos da Reengenharia</h2>
+                        <p class="text-justify">A reengenharia visa a mudança inovadora dos processos por meio dos quais a empresa se adapta a condições mais severas (custos altos, concorrência, escassez de recursos, novas tecnologias, regras impostas) e responde às expectativas (preços baixos, canais de distribuição, produtos inovadores).
+                        <br/><br/>Algumas das grandes mudanças propostas pela reengenharia em termos das pessoas são:</p>
+                        <ul style="margin-left: 25px;">
+                            <li>A diminuição dos níveis hierárquicos, para desburocratizar processos e decisões;</li>
+                            <li>A criação de equipes multifuncionais;</li>
+                            <li>A aplicação sistemática de inovações tecnológicas.</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 image-container">
+                        <img src="/img/period-content/reengenharia.png" alt="Reengenharia" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-page container normal-container text-center content-start" style="margin-bottom: 50px;">
+                <a class="button-a-expand" data-swup-preload href="/portfolio/primeiro-periodo/"><button class="portfolio-page back-button"><i
+                            class="portfolio-page fas fa-long-arrow-alt-left"></i> Voltar</button></a>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer container">
+                <div class="footer row">
+                    <div class="footer col-md-12" style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                        <img src="/img/logo-aiconn.svg" alt="Logo" height="40px">
+                        <img src="/img/logo-unifil.svg" alt="Unifil" height="60px">
+                    </div>
+                    
+                    <div class="col-md">
+                        <p class="footer copyright">&copy; <span id="current_year"></span> Aiconn, Projeto Interdisciplinar, Unifil</p>
+                    </div>
+                    <div class="footer col-md text-right">
+                        <p>Startup desenvolvida para o Projeto Interdisciplinar da <a href="https://unifil.br" target="_blank" rel="noopener noreferrer">Unifil</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        window.onload = () => {
+            document.body.removeAttribute("style");
+            document.getElementById("current_year").innerHTML = new Date().getFullYear();
+        }
+    </script>
+    <script data-swup-ignore-script>
+        const swup = new Swup({
+            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+                new SwupSlideTheme(), new SwupScriptsPlugin() ],
+            animateHistoryBrowsing: true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</body>
+
+</html>

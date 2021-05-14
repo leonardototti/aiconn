@@ -1,0 +1,233 @@
+header:not(.portfolio-submenu), header *:not(.portfolio-submenu) {
+    opacity: 1!important;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: var(--darkprimary-color)!important;
+    z-index: 99999;
+}
+
+.sticky .navigation-container a:not(.portfolio-submenu):not(.active-page), .sticky .logo-container p {
+    color: whitesmoke;
+    transition: .4s;
+}
+
+.sticky .navigation-container li a:hover {
+    color: var(--lightererprimary-color)!important;
+}
+
+.sticky .navigation-container li a.active-page {
+    color: var(--lighterprimary-color);
+}
+
+.sticky .hamburger {
+    filter: invert(1)!important;
+    right: 8%!important;
+}
+
+@media(min-width: 576px) {
+    .sticky .hamburger {
+        right: 12%!important;
+    }
+}
+
+.navbar-container {
+    padding: 20px;
+    background-color: transparent;
+    user-select: none;
+    z-index: 10;
+    transition: .4s;
+    opacity: .99;
+}
+
+.navbar-container p, .navbar-container a {
+    font-family: 'Mont'!important;
+}
+
+.navbar-container .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.navigation-container {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0!important;
+}
+
+.navigation-container li {
+    margin: 10px;
+}
+
+@media(min-width: 769px) {
+    .hamburger {
+        display: none!important;
+    }
+}
+
+@media(max-width: 768px) {
+    .navigation-container {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: -100%;
+        flex-direction: column;
+        align-items: center;
+        background: var(--darkprimary-color);
+        justify-content: center;
+        transition: .2s;
+        z-index: 2;
+        overflow: auto;
+    }
+
+    .navigation-container li {
+        margin: 20px
+    }
+
+    .portfolio-submenu li {
+        margin: 10px!important;
+    }
+
+    .navigation-container li a {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .navigation-container li a:not(.invert):not(.portfolio-submenu li a):not(.portfolio-li a):not(.portfolio-submenu a) {
+        color: whitesmoke!important;
+    }
+
+    .navigation-container li a:hover:not(.invert) {
+        color: var(--lightererprimary-color)!important;
+    }
+
+    .navigation-container.is-active {
+        left: 0!important;
+    }
+
+    .portfolio-submenu {
+        border-bottom: 5px solid var(--darkprimary-color)!important;
+    }
+
+    .portfolio-submenu a[disabled] {
+        display: none;
+    }
+}
+
+.portfolio-li {
+    position: relative;
+    transition: .3s;
+}
+
+.portfolio-li i.submenu-icon {
+    margin-left: -10px;
+    margin-top: 5px;
+    padding: 0px 5px;
+    cursor: pointer;
+    transition: .2s;
+    color: var(--darkprimary-color);
+}
+
+.portfolio-li.index-page i.submenu-icon {
+    color: white!important;
+}
+
+.portfolio-li.portfolio-page i.submenu-icon {
+    color: var(--navigation-active-page);
+}
+
+.sticky .portfolio-li i.submenu-icon {
+    color: whitesmoke;
+}
+
+.sticky .portfolio-li.portfolio-page i.submenu-icon {
+    color: var(--lighterprimary-color)!important;
+}
+
+.portfolio-li.is-active i.submenu-icon {
+    transform: rotate(180deg);
+}
+
+.portfolio-submenu {
+    list-style: none;
+    background-color: white;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.5);
+    color: var(--primary-color);
+    padding: 20px 0;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(40px);
+    pointer-events: none;
+    user-select: none;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom: 5px solid var(--primary-color);
+    overflow: hidden;
+    transition: all .3s ease;
+    z-index: 9;
+    opacity: 0;
+}
+
+.portfolio-submenu.menuopened {
+    opacity: 1!important;
+    pointer-events: all;
+    transition: .3s;
+}
+
+.portfolio-submenu a {
+    text-align: center;
+    color: var(--primary-color)!important;
+    font-family: 'Roboto'!important;
+    width: 100%;
+    padding: 7.5px 30px!important;
+}
+
+.portfolio-submenu a[disabled] li {
+    opacity: .3!important;
+}
+
+.logo-container {
+    z-index: 99999;
+}
+
+.hamburger {
+    outline: none!important;
+    z-index: 99999;
+    position: absolute;
+    top: 19px;
+    right: 8%;
+}
+
+@media(min-width: 576px) {
+    .hamburger {
+        right: 12%;
+    }
+}
+
+.hamburger.invert {
+    filter: invert(1);
+}
+
+.hamburger.is-active:not(.invert) {
+    filter: invert(1);
+}
+
+.navigation-container a {
+    text-decoration: none!important;
+    padding: 20px;
+}
+
+@media(max-width: 768px) and (min-width: 768px) {
+    .logo-container {
+        margin-left: 65px;
+    }
+}

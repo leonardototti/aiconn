@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script data-swup-ignore-script defer src="https://kit.fontawesome.com/5f36581569.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/js/SwupHeadPlugin.js"></script>
+    <script src="/js/SwupPreloadPlugin.js"></script>
+    <script src="/js/SwupProgressPlugin.js"></script>
+    <script src="/js/SwupSlideTheme.js"></script>
+    <script src="/js/SwupScriptsPlugin.js"></script>
+
+    <script async src="/js/main.js"></script>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
+
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/burger.css">
+
+    <link rel="preload" href="/css/pages/portfolio.css" as="style">
+    <link rel="stylesheet" href="/css/pages/portfolio.css">
+
+    <link rel="preload" href="/css/pages/index.css" as="style">
+    <link rel="preload" href="/css/pages/about.css" as="style">
+    <link rel="preload" href="/css/pages/who.css" as="style">
+
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" as="style"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Aiconn - Primeiro Periodo</title>
+</head>
+
+<body style="opacity: 0;">
+    <main id="swup" class="portfolio-page page-transition">
+        <div class="overlay-menu"></div>
+        <header id="navbar" class="portfolio-page navbar-container">
+            <div class="portfolio-page container">
+                <div class="portfolio-page logo-container">
+                    <img src="/img/logo-aiconn.svg" alt="Logo" height="50px" width="auto"/>
+                </div>
+                <nav>
+                    <ul class="portfolio-page navigation-container">
+                        <li><a data-swup-preload href="/">inicio</a></li>
+                        <li><a data-swup-preload href="/sobre">sobre</a></li>
+                        <li><a data-swup-preload href="/quem-somos">quem somos</a></li>
+                        <li class="portfolio-page portfolio-li"><a class="who-page active-page" data-swup-preload href="/portfolio">portfolio</a> <i onclick="toggleSubMenu();"
+                            class="portfolio-page fas fa-chevron-down submenu-icon"></i>
+                            <ul class="portfolio-page portfolio-submenu">
+                                <a href="/portfolio/primeiro-periodo">
+                                    <li>1º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>2º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>3º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>4º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>5º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>6º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>7º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>8º Período</li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button onclick="toggleMainMenu();" class="portfolio-page hamburger hamburger--collapse" type="button">
+                        <span class="portfolio-page hamburger-box">
+                            <span class="portfolio-page hamburger-inner"></span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <section id="banner" class="portfolio-page">
+            <span class="portfolio-page period-number">1º</span>
+            <div class="portfolio-page container content-start">
+                <h1 class="portfolio-page main-title montserrat-font light">Primeiro Período</h1>
+                <p class="portfolio-page main-description light">Tenha acesso ao histórico de atividades desenvolvidas por nós clicando
+                    no respectivo período.</p>
+            </div>
+        </section>
+        <div class="portfolio-page shape-divider-bottom">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path fill="#1a1b1d" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
+            </svg>
+        </div>
+
+        <section id="breadcrumb" class="portfolio-page">
+            <div class="portfolio-page container normal-container">
+                <ul>
+                    <a href="/">
+                        <li>Início</li>
+                    </a>
+                    <a href="/portfolio">
+                        <li>Portfolio</li>
+                    </a>
+                    <a class="portfolio-page current-page" href="#">
+                        <li>Primeiro Período</li>
+                    </a>
+                </ul>
+            </div>
+        </section>
+
+        <section id="period-container" class="portfolio-page first-period-container">
+            <div class="portfolio-page container normal-container">
+                <h2 class="portfolio-page title">Desenvolvimento de Aplicativos Móveis</h2>
+                <p class="portfolio-page professor-name">PROFESSOR: <span>Adail Roberto Nogueira</span></p>
+                <hr class="portfolio-page divisor" />
+                <p class="portfolio-page subtitle">A disciplina objetiva capacitar os alunos no reconhecimento e classificação da
+                    Computação Móvel, reconhecer os principais elementos do Desenvolvimento de Aplicativos Móveis e sua
+                    aplicação em sistemas e Desenvolver aplicativos usando ferramentas e recursos atuais como Angular e
+                    Ionic Framework.</p>
+                <a class="button-a-expand" data-swup-preload href="/portfolio/primeiro-periodo/desenvolvimento-de-aplicativos-moveis/"><button class="portfolio-page projects-button"><i class="portfolio-page fas fa-project-diagram"></i>
+                        Trabalhos</button></a>
+            </div>
+        </section>
+
+        <div class="portfolio-page container normal-container">
+            <hr class="portfolio-page period-divisor" />
+        </div>
+
+        <section id="period-container" class="portfolio-page">
+            <div class="portfolio-page container normal-container">
+                <h2 class="portfolio-page title">Gerência de Requisitos</h2>
+                <p class="portfolio-page professor-name">PROFESSOR: <span>Anderson Emidio de Macedo Gonçalves</span></p>
+                <hr class="portfolio-page divisor" />
+                <p class="portfolio-page subtitle">A disciplina objetiva capacitar os alunos para o reconhecimento, obtenção,
+                    elicitação e gerenciamento de requisitos e capacitar os alunos para reconhecer, interpretar e
+                    elaborar diagramas em UML de casos de uso e classes.</p>
+                <a class="button-a-expand" data-swup-preload href="/portfolio/primeiro-periodo/gerencia-de-requisitos/"><button class="portfolio-page projects-button"><i class="portfolio-page fas fa-project-diagram"></i>
+                        Trabalhos</button></a>
+            </div>
+        </section>
+
+        <div class="portfolio-page container normal-container">
+            <hr class="portfolio-page period-divisor" />
+        </div>
+
+        <section id="period-container" class="portfolio-page">
+            <div class="portfolio-page container normal-container">
+                <h2 class="portfolio-page title">Gestão de Pessoas</h2>
+                <p class="portfolio-page professor-name">PROFESSOR: <span>Sergio Antunes de Almeida</span></p>
+                <hr class="portfolio-page divisor" />
+                <p class="portfolio-page subtitle">A disciplina tem como proposta abordar os conceitos e teorias de valorização das
+                    pessoas no ambiente organizacional, promover o desempenho eficiente dos profissionais, ao mesmo
+                    tempo em que a organização representa o meio que permite às pessoas que com ela colaboram alcançar
+                    os objetivos individuais relacionados direta ou indiretamente com o trabalho e proporcionar ampla
+                    revisão conceitual e discussão sobre temas pertinentes às teorias Gestão de Pessoas.</p>
+                <a class="button-a-expand" data-swup-preload href="/portfolio/primeiro-periodo/gestao-de-pessoas/"><button class="portfolio-page projects-button"><i class="portfolio-page fas fa-project-diagram"></i>
+                        Trabalhos</button></a>
+            </div>
+        </section>
+
+        <div class="portfolio-page container normal-container">
+            <hr class="portfolio-page period-divisor" />
+        </div>
+
+        <section id="period-container" class="portfolio-page last">
+            <div class="portfolio-page container normal-container">
+                <h2 class="portfolio-page title">Lógica de Programação e Algoritmos</h2>
+                <p class="portfolio-page professor-name">PROFESSOR: <span>Edson Shinki Kaneshima</span></p>
+                <hr class="portfolio-page divisor" />
+                <p class="portfolio-page subtitle">A disciplina objetiva compreender e propor algoritmos para a solução de problemas
+                    computacionais, independentemente de linguagem de programação, dominar os conceitos de lógica de
+                    programação, ser capaz de utilizar uma linguagem de programação e dominar um ambiente de
+                    desenvolvimento de software, e fazer testes simples.</p>
+                <a class="button-a-expand" data-swup-preload href="/portfolio/primeiro-periodo/logica-e-programacao-de-algoritmos/"><button class="portfolio-page projects-button"><i class="portfolio-page fas fa-project-diagram"></i>
+                        Trabalhos</button></a>
+            </div>
+        </section>
+
+        <div class="portfolio-page container normal-container text-center content-start" style="margin-bottom: 50px;">
+            <a class="button-a-expand" data-swup-preload href="/portfolio"><button class="portfolio-page back-button"><i
+                        class="portfolio-page fas fa-long-arrow-alt-left"></i> Voltar</button></a>
+        </div>
+
+        <footer>
+            <div class="footer container">
+                <div class="footer row">
+                    <div class="footer col-md-12" style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                        <img src="/img/logo-aiconn.svg" alt="Logo" height="40px">
+                        <img src="/img/logo-unifil.svg" alt="Unifil" height="60px">
+                    </div>
+                    
+                    <div class="col-md">
+                        <p class="footer copyright">&copy; <span id="current_year"></span> Aiconn, Projeto Interdisciplinar, Unifil</p>
+                    </div>
+                    <div class="footer col-md text-right">
+                        <p>Startup desenvolvida para o Projeto Interdisciplinar da <a href="https://unifil.br" target="_blank" rel="noopener noreferrer">Unifil</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        window.onload = () => {
+            document.body.removeAttribute("style");
+            document.getElementById("current_year").innerHTML = new Date().getFullYear();
+        }
+    </script>
+    <script data-swup-ignore-script>
+        const swup = new Swup({
+            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+                new SwupSlideTheme(), new SwupScriptsPlugin() ],
+            animateHistoryBrowsing: true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</body>
+
+</html>

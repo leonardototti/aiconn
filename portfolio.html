@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous"></script>
+    <script data-swup-ignore-script defer src="https://kit.fontawesome.com/5f36581569.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script src="/js/SwupHeadPlugin.js"></script>
+    <script src="/js/SwupPreloadPlugin.js"></script>
+    <script src="/js/SwupProgressPlugin.js"></script>
+    <script src="/js/SwupSlideTheme.js"></script>
+    <script src="/js/SwupScriptsPlugin.js"></script>
+
+    <script async src="/js/main.js"></script>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png"/>
+
+    <link rel="preload" href="/css/stylesheet.css" as="style">
+    <link rel="stylesheet" href="/css/stylesheet.css">
+    <link rel="stylesheet" href="/css/">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/burger.css">
+
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" as="style"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Aiconn - Portfolio</title>
+</head>
+
+<body style="opacity: 0;">
+    <main id="swup" class="portfolio-page page-transition">
+        <div class="overlay-menu"></div>
+        <header id="navbar" class="portfolio-page navbar-container">
+            <div class="portfolio-page container">
+                <div class="portfolio-page logo-container">
+                    <img src="/img/logo-aiconn.svg" alt="Logo" height="50px" width="auto"/>
+                </div>
+                <nav>
+                    <ul class="portfolio-page navigation-container">
+                        <li><a data-swup-preload href="/">inicio</a></li>
+                        <li><a data-swup-preload href="/sobre">sobre</a></li>
+                        <li><a data-swup-preload href="/quem-somos">quem somos</a></li>
+                        <li class="portfolio-page portfolio-li"><a class="who-page active-page" data-swup-preload href="/portfolio">portfolio</a> <i onclick="toggleSubMenu();"
+                            class="portfolio-page fas fa-chevron-down submenu-icon"></i>
+                            <ul class="portfolio-page portfolio-submenu">
+                                <a href="/portfolio/primeiro-periodo">
+                                    <li>1º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>2º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>3º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>4º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>5º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>6º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>7º Período</li>
+                                </a>
+                                <a disabled href="#">
+                                    <li>8º Período</li>
+                                </a>
+                            </ul>
+                        </li>
+                    </ul>
+                    <button onclick="toggleMainMenu();" class="portfolio-page hamburger hamburger--collapse" type="button">
+                        <span class="portfolio-page hamburger-box">
+                            <span class="portfolio-page hamburger-inner"></span>
+                        </span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <div class="portfolio-page container content-start">
+            <h1 class="portfolio-page main-title dark">Portfolio</h1>
+            <p class="portfolio-page main-description dark">Tenha acesso ao histórico de atividades desenvolvidas por nós clicando no
+                respectivo período. Por aqui você acompanha nosso progresso, tudo que fizemos até então.</p>
+        </div>
+
+        <section id="buttons" style="margin-bottom: 150px;">
+            <div class="portfolio-page container content-start">
+                <div class="portfolio-page periods-container">
+                    <div class="portfolio-page row">
+                        <div class="portfolio-page period-button-container col-md-3 text-center">
+                            <a class="button-a-expand" data-swup-preload href="/portfolio/primeiro-periodo"><button class="portfolio-page period-button">1º
+                                    Período</button></a>
+                        </div>
+                        <div class="portfolio-page period-button-container col-md-3 text-center">
+                            <button disabled class="portfolio-page period-button">2º Período</button>
+                        </div>
+                        <div class="portfolio-page period-button-container col-md-3 text-center">
+                            <button disabled class="portfolio-page period-button">3º Período</button>
+                        </div>
+                        <div class="portfolio-page period-button-container col-md-3 text-center">
+                            <button disabled class="portfolio-page period-button">4º Período</button>
+                        </div>
+                        <div class="portfolio-page period-button-container col-md-3 text-center">
+                            <button disabled class="portfolio-page period-button">5º Período</button>
+                        </div>
+                        <div class="portfolio-page period-button-container col-md-3 text-center">
+                            <button disabled class="portfolio-page period-button">6º Período</button>
+                        </div>
+                        <div class="portfolio-page period-button-container col-md-3 text-center">
+                            <button disabled class="portfolio-page period-button">7º Período</button>
+                        </div>
+                        <div class="portfolio-page period-button-container col-md-3 text-center">
+                            <button disabled class="portfolio-page period-button">8º Período</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer container">
+                <div class="footer row">
+                    <div class="footer col-md-12" style="display: flex; justify-content: space-between; margin-bottom: 15px;">
+                        <img src="/img/logo-aiconn.svg" alt="Logo" height="40px">
+                        <img src="/img/logo-unifil.svg" alt="Unifil" height="60px">
+                    </div>
+                    
+                    <div class="col-md">
+                        <p class="footer copyright">&copy; <span id="current_year"></span> Aiconn, Projeto Interdisciplinar, Unifil</p>
+                    </div>
+                    <div class="footer col-md text-right">
+                        <p>Startup desenvolvida para o Projeto Interdisciplinar da <a href="https://unifil.br" target="_blank" rel="noopener noreferrer">Unifil</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script>
+        window.onload = () => {
+            document.body.removeAttribute("style");
+            document.getElementById("current_year").innerHTML = new Date().getFullYear();
+        }
+    </script>
+    <script data-swup-ignore-script>
+        const swup = new Swup({
+            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+                new SwupSlideTheme(), new SwupScriptsPlugin() ],
+            animateHistoryBrowsing: true
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+</body>
+
+</html>

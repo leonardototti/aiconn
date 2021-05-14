@@ -1,0 +1,318 @@
+.logo-container.who-page p {
+    color: var(--darkprimary-color); 
+}
+
+.navigation-container.who-page a {
+    color: var(--darkprimary-color);
+    transition: .4s;
+}
+
+@media(max-width: 768px) {
+    .navigation-container.who-page a {
+        color: whitesmoke;
+    }
+    .navigation-container.who-page li a.active-page {
+        color: var(--lighterprimary-color);
+    } 
+}
+
+.navigation-container.who-page a:hover {
+    color: var(--primary-color)!important;
+}
+
+.navigation-container.who-page a.active-page {
+    color: var(--navigation-active-page);
+}
+
+.main-title.who-page {
+    font-family: 'Mont';
+    font-size: 70px;
+    color: var(--darkprimary-color);
+    transition: .4s;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, transparent 51%, var(--darkprimary-color) 49%);
+    width: fit-content;
+}
+
+@media(max-width: 768px) {
+    .main-title.who-page {
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 576px) {
+    .main-title.who-page {
+        font-size: 50px;
+    }
+}
+
+.main-description.who-page {
+    font-family: 'Roboto';
+    font-size: 18px;
+    color: var(--darkgray-color);
+    transition: .5s;
+    background-position: 100% 0;
+    background-size: 200% 100%;
+    background-image: linear-gradient(to left, transparent 51%, var(--darkgray-color) 49%);
+}
+
+.personal-container.who-page:not(:first-child) {
+    margin-top: 150px;
+}
+
+.personal-container.who-page img {
+    width: 90%;
+    height: auto;
+    border-radius: 20px 0px;
+    max-width: 500px;
+    box-shadow: 0px 5px 25px 0px rgba(0,0,0,0.1);
+}
+
+.personal-container.who-page .info-box.who-page {
+    background-color: whitesmoke;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px var(--alphaprimary-color), 0 0 30px rgba(0,0,0,.1);
+    transition: .5s;
+    height: fit-content;
+    width: 100%;
+}
+
+@media(max-width: 768px) {
+    .personal-container.who-page .info-box.who-page {
+        padding: 30px!important;
+    }
+}
+
+.personal-container.who-page .info-box.who-page:hover {
+    box-shadow: 0 0 0 1px white, 0 0 30px rgba(0,0,0,.2);
+}
+
+.personal-container.who-page .info-box.who-page:active {
+    opacity: .9;
+}
+
+.personal-container.who-page .info-box.who-page .personal-name.who-page {
+    font-family: 'Mont';
+    color: var(--darkprimary-color);
+}
+
+.personal-container.who-page .info-box.who-page .personal-email.who-page.who-page {
+    font-family: 'AzeretMono-Regular';
+    font-size: smaller;
+    overflow-wrap: break-word;
+    color: var(--lightprimary-color)!important;
+}
+
+.personal-container.who-page .info-box.who-page a {
+    color: var(--lightprimary-color)!important;
+}
+
+.personal-container.who-page .info-box.who-page .personal-bio.who-page {
+    font-family: 'Roboto';
+    margin-bottom: 0!important;
+    text-align: justify;
+    color: var(--darkgray-color);
+}
+
+.info-box-container.who-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-container.who-page ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 5px;
+    margin-bottom: 0!important;
+}
+
+.social-links-container.who-page ul li {
+    padding: 20px;
+    padding-bottom: 0;
+    font-size: 28px;
+}
+
+.social-links-container.who-page ul li a i {
+    color: var(--primary-color);
+}
+
+.social-links-container.who-page a[disabled] {
+    opacity: .2!important;
+    pointer-events: none;
+}
+
+#leonardo, #davi {
+    position: relative;
+}
+
+#victor, #gabriel {
+    background-color: whitesmoke;
+    position: relative;
+    margin-top: 250px;
+}
+
+#davi, #pedro {
+    margin-top: 250px;
+}
+
+@media(max-width: 768px) {
+    .personal-container.who-page img {
+        width: 100%!important;
+    }
+}
+
+@media(max-width: 576px) {
+    .image-container.who-page {
+        justify-content: center!important;
+    }
+}
+
+@media(min-width: 577px) {
+    #victor .row, #gabriel .row {
+        flex-direction: row-reverse!important; 
+    }
+    #victor .image-container.who-page, #gabriel .image-container.who-page {
+        justify-content: flex-start!important;
+    }
+}
+
+.shape-divider-top.who-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    filter: drop-shadow(50px 3px 0px #FF22552a);
+}
+
+.shape-divider-bottom.who-page {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+#leonardo .image-container.who-page, #davi .image-container.who-page, #victor .image-container.who-page, #gabriel .image-container.who-page, #pedro .image-container.who-page {
+    justify-content: flex-end;
+}
+
+#pedro {
+    padding-bottom: 70px;
+}
+
+.image-container.who-page {
+    display: flex;
+    align-items: center;
+}
+
+.role-text.who-page {
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    position: absolute;
+    font-family: 'Montserrat';
+    font-size: 3rem;
+    background-image: linear-gradient(
+        45deg
+        , black, transparent);
+    background-image: -wekbit-linear-gradient(
+        45deg
+        , black, transparent);   
+    background-clip: text;    
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    pointer-events: none;
+    opacity: .6;
+    background-color: white;
+}
+
+.role-text.who-page.left {
+    top: 10%;
+    left: 5%;
+    transform-origin: left;
+}
+
+.role-text.who-page.right {
+    bottom: 10%;
+    right: 5%;
+    transform-origin: right;
+}
+
+@media(min-width: 1200px) and (max-width: 1310px) {
+    .role-text.who-page.left {
+        left: 10%;
+    }
+    
+    .role-text.who-page.right {
+        right: 10%;
+    }
+}
+
+@media(max-width: 1200px) {  
+    .role-text.who-page.right {
+        bottom: 0;
+    }
+}
+
+@media(max-width: 992px) {  
+    .role-text.who-page {
+        font-size: 2.3rem;
+    }
+    .role-text.who-page.left {
+        top: 5%;
+    }
+    .role-text.who-page.right {
+        bottom: 5%;
+    }
+}
+
+@media(max-width: 768px) {  
+    .role-text.who-page {
+        font-size: 1.7rem;
+    }
+    .role-text.who-page.left.first {
+        left: -10px;
+        top: 14%;
+    }
+    .role-text.who-page.left.third {
+        left: -10px;
+        top: 7%;
+    }
+    .role-text.who-page.right.second {
+        right: -10px;
+        bottom: 18%;
+    }
+    .role-text.who-page.right.fourth {
+        right: -10px;
+        bottom: 5%;
+    }
+}
+
+@media(min-width: 611px) {
+    .role-badge-mobile {
+        display: none!important;
+    }
+}
+@media(max-width: 610px) {
+    .role-text.who-page {
+        display: none!important;
+    }
+    .role-badge-mobile {
+        display: block;
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        background-color: var(--primary-color);
+        padding: 8px 20px;
+        border-radius: 15px 0px;
+    }
+}
