@@ -32,6 +32,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script data-swup-ignore-script data-keep-script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <title>Aiconn - Sobre</title>
 </head>
@@ -106,16 +107,45 @@
             <h2 class="about-page about-title">Protótipo</h2>
             <p>Até então foi desenvolvido o protótipo da aplicação pelo <a class="about-page colored-link" href="https://appinventor.mit.edu" target="_blank" rel="noopener noreferrer">MIT App Inventor</a>, como pode ser visto a seguir:</p>
             
-            <div class="about-page screens-slider-container">
-                <img onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" src="/img/screens/criando-comunidade.png" height="450px">
-                <img onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" src="/img/screens/preferencias.png" height="500px">
-                <img onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" src="/img/screens/login.png" height="550px">
-                <img onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" src="/img/screens/registro.png" height="500px">
-                <img onmouseover="onMouseOver(this)" onmouseout="onMouseOut(this)" src="/img/screens/lista-comunidades.png" height="450px">
-            </div>
-
-            <div class="about-page screens-image-container">
-                <img src="/img/screens/featured-image.png" alt="Telas" width="100%">
+            <div id="splide" class="splide about-page">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide screen-img-container about-page">
+                            <img src="/img/screens/registro.png" alt="Tela de Registro">
+                            <p>Tela de registro para criação de contas.</p>
+                            <br/>
+                        </li>
+                        <li class="splide__slide screen-img-container about-page">
+                            <img src="/img/screens/login.png" alt="Tela de Login">
+                            <p>Tela de login para o acesso a contas.</p>
+                            <br/>
+                        </li>
+                        <li class="splide__slide screen-img-container about-page">
+                            <img src="/img/screens/preferencias.png" alt="Tela de Preferências">
+                            <p>Tela de preferências para o usuário selecionar as de seu interesse.</p>
+                        </li>
+                        <li class="splide__slide screen-img-container about-page">
+                            <img src="/img/screens/inicio.png" alt="Tela de Início">
+                            <p>Tela de início do aplicativo com um feed de postagens.</p>
+                        </li>
+                        <li class="splide__slide screen-img-container about-page">
+                            <img src="/img/screens/criarcomunidade.png" alt="Criando comunidades">
+                            <p>Tela de criação de comunidades.</p>
+                        </li>
+                        <li class="splide__slide screen-img-container about-page">
+                            <img src="/img/screens/personalizarcomunidade.png" alt="Personalizando comunidades">
+                            <p>Tela de personalização de uma comunidade.</p>
+                        </li>
+                        <li class="splide__slide screen-img-container about-page">
+                            <img src="/img/screens/concluido.png" alt="Comunidade criada">
+                            <p>Tela de sucesso após criar uma comunidade.</p>
+                        </li>
+                        <li class="splide__slide screen-img-container about-page">
+                            <img src="/img/screens/comunidades.png" alt="Lista de comunidades">
+                            <p>Tela que lista as comunidades.</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <div class="col-md-12" style="display: flex; justify-content: center; align-items: center;">
@@ -130,8 +160,7 @@
             <br/>
             <h2 class="about-page about-title">Onde posso acompanhar o desenvolvimento?</h2>
             <p>O desenvolvimento de nosso site e aplicativo estarão sendo atualizados diretamente em nosso <a class="about-page colored-link" href="https://github.com/aiconn" target="_blank" rel="noopener noreferrer">perfil do github</a>.</p>
-            <br/>
-            <br/>
+            <br/><br/>
         </div>
 
         <footer>
@@ -151,7 +180,7 @@
                 </div>
             </div>
         </footer>
-        <script async>
+        <!-- <script async>
             function onMouseOver(active) {
                 active.classList.add("active");
                 let images = document.querySelectorAll(".about-page .screens-slider-container img:not(.active)");
@@ -169,6 +198,24 @@
                     images[i].classList.remove("blur");
                 }
             }
+        </script> -->
+        <script>
+            new Splide( '#splide', {
+                lazyLoad: 'nearby',
+                gap: '1em',
+                perPage: 4,
+                breakpoints: {
+                    992: {
+                        perPage: 3
+                    },
+                    768: {
+                        perPage: 2
+                    },
+                    576: {
+                        perPage: 1
+                    }
+                }
+            } ).mount();
         </script>
     
         <script>
@@ -180,7 +227,7 @@
     </main>
     <script data-swup-ignore-script>
         const swup = new Swup({
-            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+            plugins: [ new SwupHeadPlugin({ persistTags: ['style', 'script[data-keep-script]'] }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
                 new SwupSlideTheme(), new SwupScriptsPlugin() ],
             animateHistoryBrowsing: true
         });

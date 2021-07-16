@@ -38,6 +38,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script data-swup-ignore-script data-keep-script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <title>Aiconn - Lógica de Programação e Algoritmos</title>
 </head>
@@ -106,7 +107,7 @@
         </section>
         <div class="portfolio-page shape-divider-bottom">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path fill="#1a1b1d" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
+                <path fill="#050B18" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
             </svg>
         </div>
 
@@ -148,17 +149,69 @@
                 <br/>
                 <div class="row">
                     <div class="col-lg-8">
-                        <h2>Algoritmo</h2>
+                        <h2>Algoritmo (Visualg)</h2>
                         <p>Foi desenvolvido o algoritmo de uma das funcionalidades do aplicativo, sendo essa, a simulação da criação de comunidades.</p>
                         <p><strong>Funcionamento:</strong></p>
-                        <p>O programa abre um menu de opções onde o usuário pode escolher entre adicionar uma nova comunidade, ver as comunidades cadastradas ou simplesmente sair e parar a execução.</p>
-                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/criacomunidades_menu.png" alt="Menu">
-                        <p>Acessando a primeira opção (<strong>Criar comunidades</strong>) o sistema pede um nome, os assuntos a serem abordados e a privacidade, sendo uma comunidade pública ou privada.</p>
-                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/criacomunidades_criando.png" alt="Criando comunidade">
-                        <p>Informando os dados, a comunidade é criada e uma tela de sucesso é apresentada.</p>
-                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/criacomunidades_sucesso.png" alt="Comunidade criada">
-                        <p>Acessando a segunda opção (<strong>Listar comunidades</strong>) obtem-se o seguinte resultado. Essa página só pode ser acessada caso exista pelo menos uma comunidade cadastrada.</p>
-                        <img style="width: 100%; max-width: 538px;" src="/img/period-content/criacomunidades_lista.png" alt="Lista de comunidades">
+                        <div id="visualg" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <p>O programa abre um menu de opções onde o usuário pode escolher entre adicionar uma nova comunidade, ver as comunidades cadastradas ou simplesmente sair e parar a execução.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/visualg/criacomunidades_menu.png" alt="Menu">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <p>Acessando a primeira opção (<strong>Criar comunidades</strong>) o sistema pede um nome, os assuntos a serem abordados e a privacidade, sendo uma comunidade pública ou privada.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/visualg/criacomunidades_criando.png" alt="Criando comunidade">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <br/>
+                                        <p>Informando os dados, a comunidade é criada e uma tela de sucesso é apresentada.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/visualg/criacomunidades_sucesso.png" alt="Comunidade criada">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <p>Acessando a segunda opção (<strong>Listar comunidades</strong>) obtem-se o seguinte resultado. Essa página só pode ser acessada caso exista pelo menos uma comunidade cadastrada.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/visualg/criacomunidades_lista.png" alt="Lista de comunidades">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <hr style="margin-top: 70px; margin-bottom: 70px;"/>
+
+                        <h2>Algoritmo (Java)</h2>
+                        <p>Desenvolvemos duas funcionalidades em Java, sendo elas a criação de contas, com login e logout e a criação de comunidades.</p>
+                        <p><strong>Funcionamento:</strong></p>
+                        <div id="java" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <p>Ao iniciar o programa é gerado um menu visual, feito por código.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/java/1.png" alt="Menu">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <p>Se tentar "<strong>Logar</strong>", antes de criar qualquer conta, o programa notificará que não há contas criadas.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/java/2.png" alt="Criando comunidade">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <br/>
+                                        <p>Ao criar um novo cadastro, você deve inserir seu e-mail, nome e senha.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/java/3.png" alt="Comunidade criada">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <p>Acessando a segunda opção (<strong>Listar comunidades</strong>) obtem-se o seguinte resultado. Essa página só pode ser acessada caso exista pelo menos uma comunidade cadastrada.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/java/4.png" alt="Lista de comunidades">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <p>Acessando a segunda opção (<strong>Listar comunidades</strong>) obtem-se o seguinte resultado. Essa página só pode ser acessada caso exista pelo menos uma comunidade cadastrada.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/java/5.png" alt="Lista de comunidades">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <p>Acessando a segunda opção (<strong>Listar comunidades</strong>) obtem-se o seguinte resultado. Essa página só pode ser acessada caso exista pelo menos uma comunidade cadastrada.</p>
+                                        <img style="margin-bottom: 2rem; width: 100%; max-width: 538px;" src="/img/period-content/java/6.png" alt="Lista de comunidades">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="download-column">
@@ -172,7 +225,15 @@
                                 <i class="fas fa-cloud-download-alt"></i>
                                 <span>APRESENTACAO.PPTX</span>
                             </a>
-                            <p class="download-subtitle last">Clique no botão para baixar a apresentação do Aiconn no PowerPoint.</p>
+                            <p class="download-subtitle">Clique no botão para baixar a apresentação do Aiconn no PowerPoint.</p>
+
+                            <a style="margin-top: 50px;" data-no-swup class="btn btn-light download-button" role="button" href="/files/CRIARCONTA.zip" download>
+                                <i class="fas fa-cloud-download-alt"></i>
+                                <span>CRIARCONTA.ZIP</span>
+                            </a>
+                            <p class="download-subtitle last">Clique no botão para baixar o algoritimo em java.</p>
+                            
+
                         </div>
                     </div>
                 </div>
@@ -200,7 +261,21 @@
                 </div>
             </div>
         </footer>
+        <script>
+            new Splide( '#visualg', {
+                gap: '1em',
+                rewind : true
+            } ).mount();
+
+            new Splide( '#java', {
+                direction: 'ttb',
+                height: '35rem',
+                gap: '1em',
+                rewind : true
+            } ).mount();
+        </script>
     </main>
+
 
     <script>
         window.onload = () => {
@@ -210,7 +285,7 @@
     </script>
     <script data-swup-ignore-script>
         const swup = new Swup({
-            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+            plugins: [ new SwupHeadPlugin({ persistTags: ['style', 'script[data-keep-script]'] }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
                 new SwupSlideTheme(), new SwupScriptsPlugin() ],
             animateHistoryBrowsing: true
         });

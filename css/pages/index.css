@@ -48,13 +48,13 @@ main.index-page {
     transition: .3s;
 }
 
-.planet-img.index-page {
+.featured-img.index-page {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 5%;
+    right: 1%;
     z-index: -1;
-    width: 35%!important;
+    width: 45%!important;
     height: auto!important;
     filter: drop-shadow(0px 0px 50px black);
     user-select: none;
@@ -62,14 +62,20 @@ main.index-page {
     animation: pulseIndex 4s infinite linear;
 }
 
+@media(max-width: 992px) {
+    .featured-img.index-page {
+        filter: drop-shadow(0px 0px 50px black) brightness(0.6);
+    }
+}
+
 @media(max-width: 768px) {
-    .planet-img.index-page {
+    .featured-img.index-page {
         width: 60%!important;
     }    
 }
 
 @media(max-width: 576px) {
-    .planet-img.index-page {
+    .featured-img.index-page {
         width: 75%!important;
         filter: drop-shadow(0px 0px 50px black) brightness(.7);
     }    

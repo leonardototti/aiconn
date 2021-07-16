@@ -38,6 +38,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script data-swup-ignore-script data-keep-script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <title>Aiconn - Desenvolvimento de Aplicativos Móveis</title>
 </head>
@@ -99,11 +100,14 @@
             <div class="portfolio-page container content-start">
                 <h1 class="portfolio-page main-title montserrat-font light">Desenvolvimento de <br/>Aplicativos Móveis</h1>
                 <p class="portfolio-page main-description light">Os projetos desenvolvidos na disciplina de <strong>Desenvolvimento de Aplicativos Móveis</strong> estão disponíveis aqui.</p>
+                <div class="professor-span-container">
+                    <span class="professor-span"><strong>Professor:</strong> Adail Roberto Nogueira</span>
+                </div>
             </div>
         </section>
         <div class="portfolio-page shape-divider-bottom">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path fill="#1a1b1d" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
+                <path fill="#050B18" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
             </svg>
         </div>
 
@@ -156,36 +160,82 @@
                         <br/>
                         <h2>Protótipo</h2>
                         <p>Até então foi desenvolvido o protótipo da aplicação pelo <a href="https://appinventor.mit.edu" target="_blank" rel="noopener noreferrer">MIT App Inventor</a>, como pode ser visto a seguir:</p>
-                        <div class="row">
-                            <div class="col-md-6 text-center">
-                                <img src="/img/screens/registro.png" width="90%" alt="Tela de Registro">
-                                <p style="margin-top: 15px;">Tela de registro para criação de contas.</p>
-                                <br/>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <img src="/img/screens/login.png" width="90%" alt="Tela de Login">
-                                <p style="margin-top: 15px;">Tela de login para o acesso a contas.</p>
-                                <br/>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <img src="/img/screens/preferencias.png" width="90%" alt="Tela de Preferências">
-                                <p style="margin-top: 15px;">Tela de preferências para o usuário selecionar e seguir categorias de seu interesse.</p>
-                                <br/>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <img src="/img/screens/criando-comunidade.png" width="90%" alt="Criando comunidades">
-                                <p style="margin-top: 15px;">Tela de criação de comunidades.</p>
-                                <br/>
-                            </div>
-                            <div class="col-md-6 text-center">
-                                <img src="/img/screens/lista-comunidades.png" width="90%" alt="Lista de comunidades">
-                                <p style="margin-top: 15px;">Tela que lista as comunidades.</p>
+                        
+                        <div id="old" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/old/registro.png" alt="Tela de Registro">
+                                        <p>Tela de registro para criação de contas.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/old/login.png" alt="Tela de Login">
+                                        <p>Tela de login para o acesso a contas.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/old/preferencias.png" alt="Tela de Preferências">
+                                        <p>Tela de preferências para o usuário selecionar e seguir categorias de seu interesse.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/old/criando-comunidade.png" alt="Criando comunidades">
+                                        <p>Tela de criação de comunidades.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/old/lista-comunidades.png" alt="Lista de comunidades">
+                                        <p>Tela que lista as comunidades.</p>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
+
                         <br/>
                         <h2>Vídeo</h2>
                         <p>Um vídeo apresentando o aplicativo e suas principais telas.</p>
                         <iframe width="100%" height="auto" style="aspect-ratio: 16 / 9; margin-bottom: 30px;" src="https://www.youtube.com/embed/1vlbVBlNwFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                        <hr style="margin-top: 70px; margin-bottom: 70px;"/>
+
+                        <h2>Protótipo</h2>
+                        <p>Desenvolvemos uma base de nosso aplicativo com o frameworks <a href="https://ionicframework.com" target="_blank" rel="noopener noreferrer">Ionic</a> e <a href="https://angular.io" target="_blank" rel="noopener noreferrer">Angular</a>, como pode ser visto a seguir:</p>
+                        
+                        <div id="new" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/registro.png" alt="Tela de Registro">
+                                        <p>Tela de registro para criação de contas.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/login.png" alt="Tela de Login">
+                                        <p>Tela de login para o acesso a contas.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/preferencias.png" alt="Tela de Preferências">
+                                        <p>Tela de preferências para o usuário selecionar as de seu interesse.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/inicio.png" alt="Tela de Início">
+                                        <p>Tela de início do aplicativo com um feed de postagens.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/criarcomunidade.png" alt="Criando comunidades">
+                                        <p>Tela de criação de comunidades.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/personalizarcomunidade.png" alt="Personalizando comunidades">
+                                        <p>Tela de personalização de uma comunidade.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/concluido.png" alt="Comunidade criada">
+                                        <p>Tela de sucesso após criar uma comunidade.</p>
+                                    </li>
+                                    <li class="splide__slide screen-img-container">
+                                        <img src="/img/screens/comunidades.png" alt="Lista de comunidades">
+                                        <p>Tela que lista as comunidades.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="download-column">
@@ -233,7 +283,21 @@
                 </div>
             </div>
         </footer>
+        <script>
+            new Splide( '#old', {
+                lazyLoad: 'nearby',
+                gap: '1em',
+                rewind : true
+            } ).mount();
+
+            new Splide( '#new', {
+                lazyLoad: 'nearby',
+                gap: '1em',
+                rewind : true
+            } ).mount();
+        </script>
     </main>
+
 
     <script>
         window.onload = () => {
@@ -243,7 +307,7 @@
     </script>
     <script data-swup-ignore-script>
         const swup = new Swup({
-            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+            plugins: [ new SwupHeadPlugin({ persistTags: ['style', 'script[data-keep-script]'] }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
                 new SwupSlideTheme(), new SwupScriptsPlugin() ],
             animateHistoryBrowsing: true
         });

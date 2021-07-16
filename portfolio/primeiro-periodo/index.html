@@ -38,6 +38,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script data-swup-ignore-script data-keep-script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
 
     <title>Aiconn - Primeiro Periodo</title>
 </head>
@@ -104,7 +105,7 @@
         </section>
         <div class="portfolio-page shape-divider-bottom">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path fill="#1a1b1d" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
+                <path fill="#050B18" d="M649.97 0L550.03 0 599.91 54.12 649.97 0z"></path>
             </svg>
         </div>
 
@@ -133,7 +134,7 @@
                     Computação Móvel, reconhecer os principais elementos do Desenvolvimento de Aplicativos Móveis e sua
                     aplicação em sistemas e Desenvolver aplicativos usando ferramentas e recursos atuais como Angular e
                     Ionic Framework.</p>
-                <a class="button-a-expand" data-swup-preload href="/portfolio/primeiro-periodo/desenvolvimento-de-aplicativos-moveis/"><button class="portfolio-page projects-button"><i class="portfolio-page fas fa-project-diagram"></i>
+                <a class="button-a-expand" href="/portfolio/primeiro-periodo/desenvolvimento-de-aplicativos-moveis/"><button class="portfolio-page projects-button"><i class="portfolio-page fas fa-project-diagram"></i>
                         Trabalhos</button></a>
             </div>
         </section>
@@ -224,7 +225,7 @@
     </script>
     <script data-swup-ignore-script>
         const swup = new Swup({
-            plugins: [ new SwupHeadPlugin({ persistTags: 'style' }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
+            plugins: [ new SwupHeadPlugin({ persistTags: ['style', 'script[data-keep-script]'] }), new SwupPreloadPlugin(), new SwupProgressPlugin(),
                 new SwupSlideTheme(), new SwupScriptsPlugin() ],
             animateHistoryBrowsing: true
         });

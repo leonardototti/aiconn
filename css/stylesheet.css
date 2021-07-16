@@ -11,22 +11,24 @@
 @import url('/css/pages/portfolio.css');
 @import url('/css/pages/who.css');
 
+@import url('https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css');
+
 :root {
     /* Paleta de cores do site */
     --primary-color: #FF2255;
     --alphaprimary-color: #2125291a;
-    --darkprimary-color: #212529;
+    --darkprimary-color: #050B18;
     --lightprimary-color: #559999; 
     --lighterprimary-color: #CCDDCC;
     --lightererprimary-color: #EEEEDD;
 
     --index-buttons-hover-color: #FF2255;
     --index-copyright-a-color: #ffa2b7;
-    --portfolio-banner-color: #1a1b1d;
+    --portfolio-banner-color: #050B18;
     --professor-name-color: #212121;
     --breadcrumb-current-color: gray;
     --swup-progressbar-background: #FF2255;
-    --footer-color: #1e1e1e;
+    --footer-color: #070c16;
     --navigation-hover-color: #b2c3c3;
     --navigation-active-page: #73b9b9;
 

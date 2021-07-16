@@ -77,129 +77,6 @@ a.about-page.colored-link {
     }
 }
 
-.about-page.screens-slider-container {
-    width: 100%;
-    height: fit-content;
-    position: relative;
-    height: 700px;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.about-page.screens-slider-container img {
-    position: absolute;
-    top: 50%;
-    transition: .2s;
-}
-
-.about-page.screens-slider-container img.blur {
-    filter: blur(5px);
-}
-
-.about-page.screens-slider-container img:hover {
-    z-index: 10!important;
-    cursor: pointer;
-}
-
-.about-page.screens-slider-container img:hover:nth-child(1) {
-    transform: translateY(-50%) scale(1.1);
-    height: 500px;
-}
-
-.about-page.screens-slider-container img:hover:nth-child(2) {
-    transform: translateY(-50%) scale(1.1);
-    height: 500px;
-}
-
-.about-page.screens-slider-container img:hover:nth-child(3) {
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
-.about-page.screens-slider-container img:hover:nth-child(4) {
-    transform: translateY(-50%) scale(1.1);
-    height: 500px;
-}
-.about-page.screens-slider-container img:hover:nth-child(5) {
-    transform: translateY(-50%) scale(1.1);
-    height: 500px;
-}
-
-.about-page.screens-slider-container img:nth-child(1) {
-    left: 15%;
-    transform: translateY(-50%);
-    z-index: 7;
-}
-
-.about-page.screens-slider-container img:nth-child(2) {
-    left: 25%;
-    transform: translateY(-50%);
-    z-index: 8;
-}
-
-.about-page.screens-slider-container img:nth-child(3) {
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9;
-}
-
-.about-page.screens-slider-container img:nth-child(4) {
-    right: 25%;
-    transform: translateY(-50%);
-    z-index: 8;
-}
-
-.about-page.screens-slider-container img:nth-child(5) {
-    right: 15%;
-    transform: translateY(-50%);
-    z-index: 7;
-}
-
-@media(max-width: 1200px) {
-    .about-page.screens-slider-container img:nth-child(1) {
-        left: 0;
-        transform: translateY(-50%);
-        z-index: 7;
-    }
-    
-    .about-page.screens-slider-container img:nth-child(2) {
-        left: 15%;
-        transform: translateY(-50%);
-        z-index: 8;
-    }
-    
-    .about-page.screens-slider-container img:nth-child(4) {
-        right: 15%;
-        transform: translateY(-50%);
-        z-index: 8;
-    }
-    
-    .about-page.screens-slider-container img:nth-child(5) {
-        right: 0;
-        transform: translateY(-50%);
-        z-index: 7;
-    }
-}
-
-@media(min-width: 769px) {
-    .about-page.screens-slider-container {
-        display: block!important;
-    }
-
-    .about-page.screens-image-container {
-        display: none!important;
-    }
-}
-
-@media(max-width: 768px) {
-    .about-page.screens-slider-container {
-        display: none!important;
-    }
-
-    .about-page.screens-image-container {
-        display: block!important;
-    }
-}
-
 .about-page.download-container {
     background-color: var(--primary-color);
     padding: 20px;
@@ -275,4 +152,26 @@ a.about-page.colored-link {
     font-family: 'Roboto';
     font-size: 12px;
     margin-top: 10px;
+}
+
+.about-page.splide {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.about-page.screen-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-page.screen-img-container img {
+    max-width: 50%;
+}
+
+.about-page.screen-img-container p { 
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
 }

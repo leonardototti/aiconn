@@ -61,6 +61,35 @@
     }
 } 
 
+#period_content.desenvolvimento-apps .screen-img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#period_content.desenvolvimento-apps .screen-img-container img {
+    max-width: 50%;
+}
+
+#period_content.desenvolvimento-apps .screen-img-container p { 
+    text-align: center;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+#period_content #visualg .splide__slide, #period_content #java .splide__slide  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.splide__pagination__page.is-active {
+    background: var(--primary-color)!important;
+}
+
+/* Download column */
 #period_content .download-column p {
     margin-bottom: 0!important;
     color: white;

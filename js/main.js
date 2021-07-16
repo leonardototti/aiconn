@@ -6,15 +6,15 @@ if(typeof isSubMenuOpen == 'undefined') {
     isSubMenuOpen = false;
 }
 
-document.body.onresize = function(){
-    if(window.innerWidth >= 768) {
-        isMainMenuOpen ? toggleMainMenu() : null;
-        isSubMenuOpen ? toggleSubMenu() : null;
+// document.body.onresize = function(){
+//     if(window.innerWidth >= 768) {
+//         isMainMenuOpen ? toggleMainMenu() : null;
+//         isSubMenuOpen ? toggleSubMenu() : null;
         
-        isMainMenuOpen = false;
-        isSubMenuOpen = false;
-    }
-};
+//         isMainMenuOpen = false;
+//         isSubMenuOpen = false;
+//     }
+// };
 
 function toggleMainMenu() {
     const burger = document.querySelector(".hamburger");
