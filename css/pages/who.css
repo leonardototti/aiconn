@@ -150,7 +150,7 @@
     position: relative;
 }
 
-#victor, #gabriel {
+#victor, #gabriel, #milene {
     background-color: whitesmoke;
     position: relative;
     margin-top: 250px;
@@ -173,10 +173,10 @@
 }
 
 @media(min-width: 577px) {
-    #victor .row, #gabriel .row {
+    #victor .row, #gabriel .row, #milene .row {
         flex-direction: row-reverse!important; 
     }
-    #victor .image-container.who-page, #gabriel .image-container.who-page {
+    #victor .image-container.who-page, #gabriel .image-container.who-page, #milene .image-container.who-page {
         justify-content: flex-start!important;
     }
 }
@@ -197,12 +197,16 @@
     line-height: 0;
 }
 
-#leonardo .image-container.who-page, #davi .image-container.who-page, #victor .image-container.who-page, #gabriel .image-container.who-page, #pedro .image-container.who-page {
+.image-container.who-page {
     justify-content: flex-end;
 }
 
 #pedro {
     padding-bottom: 70px;
+}
+
+#milene {
+    padding-bottom: 50px;
 }
 
 .image-container.who-page {
