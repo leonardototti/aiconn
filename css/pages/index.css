@@ -145,8 +145,8 @@ main.index-page {
 
 .buttons-container.index-page button {
     border: 0!important;
-    border-radius: 10px;
-    padding: 10px 25px;
+    border-radius: 6px;
+    padding: 12px 25px;
     font-weight: bold;
     transition: .4s;
     box-shadow: inset 0px 0px 5px rgba(0,0,0,0.5);
